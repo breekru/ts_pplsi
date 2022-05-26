@@ -28,6 +28,17 @@ session_start(); // Session starts here.
 <body>
   <h1>PPLSI Technical Support Workflow</h1>
   <h2>New Caller Form</h2>
+
+  <span id="error">
+ <!---- Initializing Session for errors --->
+ <?php
+ if (!empty($_SESSION['error'])) {
+ echo $_SESSION['error'];
+ unset($_SESSION['error']);
+ }
+ ?>
+ </span>
+
   <!--Form Start-->
   <div class="login-box">
       <h2>Collect User Info</h2>
