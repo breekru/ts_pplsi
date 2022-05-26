@@ -43,8 +43,8 @@ p {
   margin: 4px 2px;
   transition-duration: 0.2s;
   cursor: pointer;
-  align: center;
-}
+  margin: auto;
+  }
 
 .button1 {
   background-color: white; 
