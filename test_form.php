@@ -19,8 +19,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="css/form.css">
-  <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+  <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso 
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> -->
 
 
 
