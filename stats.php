@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <td>Abandoned Calls</td>
-        <td class="bad">28</td>
+        <td class="bad">28</td><p><--Had a major change that held up queues with so many calling in at once</p>
     </tr>
     <tr>
         <td>Calls Answered</td>
