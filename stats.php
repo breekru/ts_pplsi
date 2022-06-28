@@ -61,6 +61,43 @@
 </table>
 
 
+<h1>Monday 6/28 Call Review</h1>
+<table class="center">
+    <tr>
+        <td>Calls Received</td>
+        <td>78</td>
+    </tr>
+    <tr>
+        <td>Abandoned Calls</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Calls Answered</td>
+        <td>74</td>
+    </tr>
+    <tr>
+        <td>Providers</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>Corporate</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>3rd Party Call Center</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>Vendors</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Transfers from Front Desk</td>
+        <td>1</td>
+    </tr>
+</table>
+
+
 
 </body>
 </html>
