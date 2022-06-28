@@ -31,23 +31,18 @@ p {
     color: #000000;
 }
 
-.stats {
-
-}
-
-.stats td th {
+table, td, th {
   border: 1px solid black;
 }
 
-.stats table {
+table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.stats th {
+th {
   text-align: right;
 }
-
 
 
 
