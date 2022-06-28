@@ -49,6 +49,10 @@ tr:nth-child(even) {
   background-color: #D1D3DF;
 }
 
+tr:nth-child(odd) {
+  background-color: #737584;
+}
+
 .center{
   margin-left: auto;
   margin-right: auto;
