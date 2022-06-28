@@ -25,7 +25,7 @@
 
 <body>
 <h1>6/20-6/26 Call Review</h1>
-<table>
+<table class="stats">
     <tr>
         <td>Calls Received</td>
         <td>404</td>
