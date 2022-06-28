@@ -33,7 +33,6 @@
     <tr>
         <td>Abandoned Calls</td>
         <td class="bad">28</td>
-        <td><--Had a major change that held up queues with so many calling in at once</td>
     </tr>
     <tr>
         <td>Calls Answered</td>
