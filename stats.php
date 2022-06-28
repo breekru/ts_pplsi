@@ -19,7 +19,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
