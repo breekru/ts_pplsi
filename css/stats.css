@@ -58,7 +58,10 @@ tr:nth-child(odd) {
   margin-right: auto;
 }
 
-
+.bad{
+  font-weight: bold;
+  color: red;
+}
 .button {
   background-color: #4CAF50; /* Green */
   border: none;

@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <td>Abandoned Calls</td>
-        <td>28</td>
+        <td class="bad">28</td>
     </tr>
     <tr>
         <td>Calls Answered</td>
