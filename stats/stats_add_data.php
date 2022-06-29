@@ -32,7 +32,7 @@ require('config.php');
 </head>
 
 <body>
-<table class="center">
+<!--<table class="center">
 
 <?php
 //$count=1;
@@ -80,7 +80,7 @@ $row = mysqli_fetch_assoc($result);
 
 
 
-<!--<h1>6/20-6/26 Call Review</h1>
+<h1>6/20-6/26 Call Review</h1>
 <table class="center">
     <tr>
         <td>Calls Received</td>
