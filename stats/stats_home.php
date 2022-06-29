@@ -57,7 +57,7 @@ $result = mysqli_query($con,$sql);
 $count=1;
 while($row = mysqli_fetch_assoc($result)):;
 ?>
-    <option value="<?php echo $row; ?>"><?php echo $row; ?></option>
+    <option value="<?php echo $row["day_of_week"]; ?>"><?php echo $row["day_of_week"]; ?></option>
 
     <?php
     endwhile;
