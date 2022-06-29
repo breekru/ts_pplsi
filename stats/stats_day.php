@@ -35,6 +35,9 @@ require('config.php');
 <table class="center">
 
 <?php
+if(isset($_POST["usub"])){
+    $date = $_POST["datepicker"];
+}
 //$count=1;
 $sel_query = "SELECT * FROM `stats` WHERE `date`=\"2022-06-29\"";
 //$sel_query = "SELECT * FROM `stats`";
