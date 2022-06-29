@@ -1,0 +1,54 @@
+/*
+#primary: #9400A1;
+#Secondary: #C900D1;
+#prim_turq: #5DB0DE;
+#sec_turq: #8AD9F0;
+#mid_gray: #D1D3DF;
+#dark_gray: #737584;
+*/
+body {
+    background-color: #d1d3df;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #9400A1;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5DB0DE;
+    text-align: center;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #C900D1;
+  }
+  
+  .button1:hover {
+    background-color: #C900D1;
+    color: white;
+  }
