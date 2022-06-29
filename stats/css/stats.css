@@ -70,7 +70,7 @@ tr:nth-child(odd) {
   color: red;
 }
 
-.center {
+.divcenter {
   margin: auto;
   width: 50%;
   border: 3px solid green;
