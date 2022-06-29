@@ -32,128 +32,48 @@ require('config.php');
 </head>
 
 <body>
-<!--<table class="center">
 
-<?php
-//$count=1;
-$sel_query = "SELECT * FROM `stats`";
-//$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
-$result = mysqli_query($con,$sel_query);
-//while($row = mysqli_fetch_assoc($result)) { 
-$row = mysqli_fetch_assoc($result);
-?>
-<caption><h1>Weekly Call Data for <?php echo $row["day_of_week"]; ?> </h1></caption>
-    <tr>
-        <td>Calls Received</td>
-        <td><?php echo $row["received"]; ?></td>
-    </tr>
-    <tr>
-        <td>Abandoned Calls</td>
-        <td><?php echo $row["abandoned"]; ?></td>
-    </tr>
-    <tr>
-        <td>Calls Answered</td>
-        <td><?php echo $row["answered"]; ?></td>
-    </tr>
-    <tr>
-        <td>Providers</td>
-        <td><?php echo $row["providers"]; ?></td>
-    </tr>
-    <tr>
-        <td>Corporate</td>
-        <td><?php echo $row["corporate"]; ?></td>
-    </tr>
-    <tr>
-        <td>3rd Party Call Center</td>
-        <td><?php echo $row["call_centers"]; ?></td>
-    </tr>
-    <tr>
-        <td>Vendors</td>
-        <td><?php echo $row["vendors"]; ?></td>
-    </tr>
-    <tr>
-        <td>Transfers from Front Desk</td>
-        <td><?php echo $row["front_desk"]; ?></td>
-    </tr>
-    </table>
-    <?php //$count++; } ?>
+<h1>Add Data to the DB</h1>
+<form action="control_table.php" method="post">
+    <label for="timeframe">Month/Week/Day</label>
+    <select id="timeframe" name="timeframe">
+        <option value="month">Month</option>
+        <option value="week">Week</option>
+        <option value="day">Day</option>
+    </select>
 
+    <label>Date (If week/month enter starting date of time period)</label>
+    <input type="date" name="date">
 
+    <label>Day of Week Month Name or Week Range</label>
+    <input type="text" name="day_of_week">
 
-<h1>6/20-6/26 Call Review</h1>
-<table class="center">
-    <tr>
-        <td>Calls Received</td>
-        <td>NA</td>
-    </tr>
-    <tr>
-        <td>Abandoned Calls</td>
-        <td class="bad">NA</td>
-    </tr>
-    <tr>
-        <td>Calls Answered</td>
-        <td>376</td>
-    </tr>
-    <tr>
-        <td>Providers</td>
-        <td>176</td>
-    </tr>
-    <tr>
-        <td>Corporate</td>
-        <td>150</td>
-    </tr>
-    <tr>
-        <td>3rd Party Call Center</td>
-        <td>40</td>
-    </tr>
-    <tr>
-        <td>Vendors</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>Transfers from Front Desk</td>
-        <td>7</td>
-    </tr>
-</table>
+    <label>Total Calls Received</label>
+    <input type="text" name="received">
 
+    <label>Total Calls Abandoned</label>
+    <input type="text" name="abandoned">
 
-<h1>Monday 6/28 Call Review</h1>
-<table class="center">
-    <tr>
-        <td>Calls Received</td>
-        <td>78</td>
-    </tr>
-    <tr>
-        <td>Abandoned Calls</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>Calls Answered</td>
-        <td>74</td>
-    </tr>
-    <tr>
-        <td>Providers</td>
-        <td>19</td>
-    </tr>
-    <tr>
-        <td>Corporate</td>
-        <td>45</td>
-    </tr>
-    <tr>
-        <td>3rd Party Call Center</td>
-        <td>9</td>
-    </tr>
-    <tr>
-        <td>Vendors</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>Transfers from Front Desk</td>
-        <td>1</td>
-    </tr>
-</table>
+    <label>Total Calls Answered</label>
+    <input type="text" name="answered">
 
--->
+    <label>Total Calls From Providers</label>
+    <input type="text" name="providers">
 
+    <label>Total Calls From Corporate Employees</label>
+    <input type="text" name="corporate">
+
+    <label>Total Calls From 3rd Party Call Centers</label>
+    <input type="text" name="call_centers">
+
+    <label>Total Calls From Vendors</label>
+    <input type="text" name="vendors">
+
+    <label>Total Calls Transfered from Front Desk</label>
+    <input type="text" name="front_desk">
+
+    <input type="submit" value="Add" name="add">
+    <input type="reset" value="Reset Form">
+</form>
 </body>
 </html>
