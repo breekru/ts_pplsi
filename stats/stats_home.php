@@ -41,7 +41,7 @@ require('config.php');
 </div>
 
 <div id="week">
-    <form method="post" action="stats_week.php">
+ <!--   <form method="post" action="stats_week.php">
         <p> Weekly Data Choose a week: <select id="weekpicker" name="weekpicker">
             <option value="6/19 - 6/25">6/19 - 6/25</option>
             <option value="6/12 - 6/18">6/12 - 6/18</option>
@@ -50,7 +50,7 @@ require('config.php');
 </form>
 
 <h2>Test Section</h2>
-
+-->
 
     <form method="post" action="stats_week.php">
         <p> Weekly Data Choose a week: 
