@@ -1,3 +1,16 @@
+<?php
+require('config.php');
+
+
+?>
+
+<?php
+$count=1;
+$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
+$result = mysqli_query($con,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { 
+	?>
+
 <!doctype html>
 
 <html lang="en">
@@ -24,6 +37,42 @@
 </head>
 
 <body>
+<table>
+    <tr>
+        <td>Calls Received</td>
+        <td><?php echo $row["received"]; ?>
+    </tr>
+    <tr>
+        <td>Abandoned Calls</td>
+        <td><?php echo $row["abandoned"]; ?>
+    </tr>
+    <tr>
+        <td>Calls Answered</td>
+        <td><?php echo $row["answered"]; ?>
+    </tr>
+    <tr>
+        <td>Providers</td>
+        <td><?php echo $row["providers"]; ?>
+    </tr>
+    <tr>
+        <td>Corporate</td>
+        <td><?php echo $row["corporate"]; ?>
+    </tr>
+    <tr>
+        <td>3rd Party Call Center</td>
+        <td><?php echo $row["call_centers"]; ?>
+    </tr>
+    <tr>
+        <td>Vendors</td>
+        <td><?php echo $row["vendors"]; ?>
+    </tr>
+    <tr>
+        <td>Transfers from Front Desk</td>
+        <td><?php echo $row["front_desk"]; ?>
+    </tr>
+</table>
+
+
 <h1>6/20-6/26 Call Review</h1>
 <table class="center">
     <tr>
