@@ -50,6 +50,11 @@ require('config.php');
 </form>
 
 <h2>Test Section</h2>
+
+
+<div id="week">
+    <form method="post" action="stats_week.php">
+        <p> Weekly Data Choose a week: 
 <select id="test" name="test">
 <?php 
 $sql = "SELECT `day_of_week` FROM `stats` WHERE `timeframe` = \"week\"";
@@ -63,6 +68,8 @@ while($row = mysqli_fetch_assoc($result)):;
     endwhile;
     ?>
 </select>
+<input type="submit" value="Submit" name="week"/>
+</form>
 </div>
 </body>
 </html>
