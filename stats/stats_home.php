@@ -57,12 +57,12 @@ $result = mysqli_query($con,$sql);
 $count=1;
 while($row = mysqli_fetch_assoc($result)):;
 ?>
-    <option value="<?php echo $result;?>"><?php echo $result;?></option>
+    <option value="<?php echo $row; ?>"><?php echo $row; ?></option>
 
     <?php
     endwhile;
     ?>
-
+</select>
 </div>
 </body>
 </html>
