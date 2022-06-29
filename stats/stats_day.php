@@ -40,7 +40,7 @@ if(isset($_POST["usub"])){
 }
 echo $date;
 //$count=1;
-$sel_query = "SELECT * FROM `stats` WHERE `date`=echo $date";
+$sel_query = "SELECT * FROM `stats` WHERE `date`='$date'";
 //$sel_query = "SELECT * FROM `stats`";
 //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
 $result = mysqli_query($con,$sel_query);
