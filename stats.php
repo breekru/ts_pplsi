@@ -76,7 +76,7 @@ $row = mysqli_fetch_assoc($result);
         <td><?php echo $row["front_desk"]; ?>
     </tr>
     </table>
-    <?php $count++; } ?>
+    <?php //$count++; } ?>
 
 
 
