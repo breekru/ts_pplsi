@@ -32,10 +32,11 @@ require('config.php');
 </head>
 
 <body>
+    <a href=stats_home.php>Return to Home Page</a>
 <table class="center">
 
 <?php
-if(isset($_POST["usub"])){
+if(isset($_POST["day"])){
     $date = $_POST["datepicker"];
 }
 //$count=1;
