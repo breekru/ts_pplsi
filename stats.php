@@ -35,48 +35,48 @@ require('config.php');
 <table>
 
 <?php
-$count=1;
+//$count=1;
 $sel_query = "SELECT * FROM `stats`";
 //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
 $result = mysqli_query($con,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { 
-//$row = mysqli_fetch_assoc($result);
+//while($row = mysqli_fetch_assoc($result)) { 
+$row = mysqli_fetch_assoc($result);
 ?>
-
+<caption>Weekly Call Data for <?php echo $row["timeframe"]; ?> </caption>
     <tr>
         <td>Calls Received</td>
-        <td><?php echo $row["received"]; ?>
+        <td><?php echo $row["received"]; ?></td>
     </tr>
     <tr>
         <td>Abandoned Calls</td>
-        <td><?php echo $row["abandoned"]; ?>
+        <td><?php echo $row["abandoned"]; ?></td>
     </tr>
     <tr>
         <td>Calls Answered</td>
-        <td><?php echo $row["answered"]; ?>
+        <td><?php echo $row["answered"]; ?></td>
     </tr>
     <tr>
         <td>Providers</td>
-        <td><?php echo $row["providers"]; ?>
+        <td><?php echo $row["providers"]; ?></td>
     </tr>
     <tr>
         <td>Corporate</td>
-        <td><?php echo $row["corporate"]; ?>
+        <td><?php echo $row["corporate"]; ?></td>
     </tr>
     <tr>
         <td>3rd Party Call Center</td>
-        <td><?php echo $row["call_centers"]; ?>
+        <td><?php echo $row["call_centers"]; ?></td>
     </tr>
     <tr>
         <td>Vendors</td>
-        <td><?php echo $row["vendors"]; ?>
+        <td><?php echo $row["vendors"]; ?></td>
     </tr>
     <tr>
         <td>Transfers from Front Desk</td>
-        <td><?php echo $row["front_desk"]; ?>
+        <td><?php echo $row["front_desk"]; ?></td>
     </tr>
     </table>
-    <?php $count++; } ?>
+    <?php //$count++; } ?>
 
 
 
