@@ -71,7 +71,7 @@ while($row = mysqli_fetch_assoc($result)):;
 </form>
 </div>
 <div class="footer" id="footer">
-    <a href="stats_add_data.php">Add Data</a>
+    <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
 </body>
 </html>

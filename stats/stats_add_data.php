@@ -32,7 +32,7 @@ require('config.php');
 </head>
 
 <body>
-
+<a href=stats_home.php>Return to Home Page</a>
 <h1>Add Data to the DB</h1>
 <form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label>
@@ -41,37 +41,37 @@ require('config.php');
         <option value="week">Week</option>
         <option value="day">Day</option>
     </select>
-
+    <br>
     <label>Date (If week/month enter starting date of time period)</label>
     <input type="date" name="date">
-
+    <br>
     <label>Day of Week Month Name or Week Range</label>
     <input type="text" name="day_of_week">
-
+    <br>
     <label>Total Calls Received</label>
     <input type="text" name="received">
-
+    <br>
     <label>Total Calls Abandoned</label>
     <input type="text" name="abandoned">
-
+    <br>
     <label>Total Calls Answered</label>
     <input type="text" name="answered">
-
+    <br>
     <label>Total Calls From Providers</label>
     <input type="text" name="providers">
-
+    <br>
     <label>Total Calls From Corporate Employees</label>
     <input type="text" name="corporate">
-
+    <br>
     <label>Total Calls From 3rd Party Call Centers</label>
     <input type="text" name="call_centers">
-
+    <br>
     <label>Total Calls From Vendors</label>
     <input type="text" name="vendors">
-
+    <br>
     <label>Total Calls Transfered from Front Desk</label>
     <input type="text" name="front_desk">
-
+    <br>
     <input type="submit" value="Add" name="add">
     <input type="reset" value="Reset Form">
 </form>
