@@ -36,11 +36,11 @@ require('config.php');
 
 <?php
 //$count=1;
-$sel_query = "SELECT * FROM `stats`";
-//$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
+//$sel_query = "SELECT * FROM `stats`";
+$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
 $result = mysqli_query($con,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { 
-}
+
 	?>
 
     <tr>
@@ -75,6 +75,8 @@ while($row = mysqli_fetch_assoc($result)) {
         <td>Transfers from Front Desk</td>
         <td><?php echo $row["front_desk"]; ?>
     </tr>
+    <?php
+        }?>
 </table>
 
 
