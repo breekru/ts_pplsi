@@ -4,12 +4,7 @@ require('config.php');
 
 ?>
 
-<?php
-$count=1;
-$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
-$result = mysqli_query($con,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { 
-	?>
+
 
 <!doctype html>
 
@@ -38,6 +33,14 @@ while($row = mysqli_fetch_assoc($result)) {
 
 <body>
 <table>
+
+<?php
+$count=1;
+$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
+$result = mysqli_query($con,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { 
+	?>
+
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?>
