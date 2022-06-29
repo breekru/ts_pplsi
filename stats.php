@@ -84,11 +84,11 @@ while($row = mysqli_fetch_assoc($result)) {
 <table class="center">
     <tr>
         <td>Calls Received</td>
-        <td>404</td>
+        <td>NA</td>
     </tr>
     <tr>
         <td>Abandoned Calls</td>
-        <td class="bad">28</td>
+        <td class="bad">NA</td>
     </tr>
     <tr>
         <td>Calls Answered</td>
