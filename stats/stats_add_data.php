@@ -34,7 +34,8 @@ require('config.php');
 <body>
 <a href=stats_home.php>Return to Home Page</a>
 <h1>Add Data to the DB</h1>
-<form action="control_table.php" method="post" class="center">
+<div class="center">
+<form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label><br>
     <select id="timeframe" name="timeframe">
         <option value="month">Month</option>
@@ -85,5 +86,6 @@ require('config.php');
     <input type="submit" value="Add" name="add">
     <input type="reset" value="Reset Form">
 </form>
+</div>
 </body>
 </html>
