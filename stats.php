@@ -32,17 +32,17 @@ require('config.php');
 </head>
 
 <body>
-
+<table>
 
 <?php
 $count=1;
 //$sel_query = "SELECT * FROM `stats`";
 $sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
 $result = mysqli_query($con,$sel_query);
-//while($row = mysqli_fetch_assoc($result)) { 
-$row = mysqli_fetch_assoc($result);
+while($row = mysqli_fetch_assoc($result)) { 
+//$row = mysqli_fetch_assoc($result);
 ?>
-<table>
+
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?>
@@ -76,7 +76,7 @@ $row = mysqli_fetch_assoc($result);
         <td><?php echo $row["front_desk"]; ?>
     </tr>
     </table>
-    <?php //$count++; } ?>
+    <?php $count++; } ?>
 
 
 
