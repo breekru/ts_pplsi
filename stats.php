@@ -32,7 +32,7 @@ require('config.php');
 </head>
 
 <body>
-<table>
+<table class="center">
 
 <?php
 //$count=1;
@@ -42,7 +42,7 @@ $result = mysqli_query($con,$sel_query);
 //while($row = mysqli_fetch_assoc($result)) { 
 $row = mysqli_fetch_assoc($result);
 ?>
-<caption>Weekly Call Data for <?php echo $row["timeframe"]; ?> </caption>
+<caption><h1>Weekly Call Data for <?php echo $row["timeframe"]; ?> </h1></caption>
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?></td>
@@ -80,7 +80,7 @@ $row = mysqli_fetch_assoc($result);
 
 
 
-<h1>6/20-6/26 Call Review</h1>
+<!--<h1>6/20-6/26 Call Review</h1>
 <table class="center">
     <tr>
         <td>Calls Received</td>
@@ -153,7 +153,7 @@ $row = mysqli_fetch_assoc($result);
     </tr>
 </table>
 
-
+-->
 
 </body>
 </html>
