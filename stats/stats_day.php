@@ -38,6 +38,7 @@ require('config.php');
 if(isset($_POST["usub"])){
     $date = $_POST["datepicker"];
 }
+echo $date;
 //$count=1;
 $sel_query = "SELECT * FROM `stats` WHERE `date`=$date";
 //$sel_query = "SELECT * FROM `stats`";
