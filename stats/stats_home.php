@@ -34,7 +34,7 @@ require('config.php');
 <body>
 <h1>Technical Support Call Data</h1>
 <form method="post" action="stats_day.php">
-    <p> Select Date: <input id="datepicker" type="text" size="8" name="datepicker"/></p>
+    <p> Select Date: <input id="datepicker" type="date" size="8" name="datepicker"/></p>
     <input type="submit" value="Submit" name="usub"/>
 </form>
 
