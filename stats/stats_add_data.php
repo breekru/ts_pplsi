@@ -39,37 +39,47 @@ require('config.php');
     <select id="timeframe" name="timeframe">
         <option value="month">Month</option>
         <option value="week">Week</option>
-        <option value="day">Day</option>
+        <option value="day" selected>Day</option>
     </select>
     <br>
     <label>Date (If week/month enter starting date of time period)</label>
+    <br>
     <input type="date" name="date">
     <br>
     <label>Day of Week Month Name or Week Range</label>
+    <br>
     <input type="text" name="day_of_week">
     <br>
     <label>Total Calls Received</label>
+    <br>
     <input type="text" name="received">
     <br>
     <label>Total Calls Abandoned</label>
+    <br>
     <input type="text" name="abandoned">
     <br>
     <label>Total Calls Answered</label>
+    <br>
     <input type="text" name="answered">
     <br>
     <label>Total Calls From Providers</label>
+    <br>
     <input type="text" name="providers">
     <br>
     <label>Total Calls From Corporate Employees</label>
+    <br>
     <input type="text" name="corporate">
     <br>
     <label>Total Calls From 3rd Party Call Centers</label>
+    <br>
     <input type="text" name="call_centers">
     <br>
     <label>Total Calls From Vendors</label>
+    <br>
     <input type="text" name="vendors">
     <br>
     <label>Total Calls Transfered from Front Desk</label>
+    <br>
     <input type="text" name="front_desk">
     <br>
     <input type="submit" value="Add" name="add">
