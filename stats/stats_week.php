@@ -32,6 +32,7 @@ require('config.php');
 </head>
 
 <body>
+<a href=stats_home.php>Return to Home Page</a>
 <table class="center">
 
 <?php
