@@ -70,5 +70,8 @@ while($row = mysqli_fetch_assoc($result)):;
 <input type="submit" value="Submit" name="week"/>
 </form>
 </div>
+<div class="footer" id="footer">
+    <a href="stats_add_data.php">Add Data</a>
+</div>
 </body>
 </html>
