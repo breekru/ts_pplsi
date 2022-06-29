@@ -34,7 +34,6 @@ require('config.php');
 <body>
 <h1>Technical Support Call Data</h1>
 <div id="day">
-    <!--
 <form method="post" action="stats_day.php">
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
     <input type="submit" value="Submit" name="day"/></p>
@@ -49,14 +48,13 @@ require('config.php');
 </select>
 <input type="submit" value="Submit" name="week"/>
 </form>
--->
+
 <h2>Test Section</h2>
 
 
-<div id="week">
     <form method="post" action="stats_week.php">
         <p> Weekly Data Choose a week: 
-<select id="test" name="test">
+<select id="weekpicker" name="weekpicker">
 <?php 
 $sql = "SELECT `day_of_week` FROM `stats` WHERE `timeframe` = \"week\"";
 $result = mysqli_query($con,$sql);
