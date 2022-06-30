@@ -57,7 +57,7 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-  background-color: #737584;
+  background-color: #fff;
 }
 
 .center{
