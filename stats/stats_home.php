@@ -36,7 +36,7 @@ require('config.php');
 <div id="day">
 <form method="post" action="stats_day.php">
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
-    <input type="submit" value="Submit" name="day"/></p>
+    <input type="submit" value="Go" name="day"/></p>
 </form>
 </div>
 
@@ -67,7 +67,7 @@ while($row = mysqli_fetch_assoc($result)):;
     endwhile;
     ?>
 </select>
-<input type="submit" value="Submit" name="week"/>
+<input type="submit" value="Go" name="week"/>
 </form>
 </div>
 <div class="footer" id="footer">
