@@ -49,7 +49,7 @@ $result = mysqli_query($con,$sel_query);
 //while($row = mysqli_fetch_assoc($result)) { 
 $row = mysqli_fetch_assoc($result);
 ?>
-<caption><h1>Monthly Call Data for <?php echo $row["day_of_week"]; ?> </h1></caption>
+<caption><h1>Monthly Call Data for <?php echo $month/$year; ?> </h1></caption>
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?></td>
