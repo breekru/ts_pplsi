@@ -90,7 +90,8 @@ while($row = mysqli_fetch_assoc($result_m)):;
     endwhile;
     ?>
 </select>
-<?php>
+<select id="yearpicker" name="yearpicker">
+<?php
 while($row = mysqli_fetch_assoc($result_y)):;
 ?>
     <option value="<?php echo $row["Years"]; ?>"><?php echo $row["Years"]; ?></option>
