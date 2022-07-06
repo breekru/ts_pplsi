@@ -42,7 +42,7 @@ if(isset($_POST["month"])){
 }
 //$count=1;
 //$sel_query = "select * FROM `stats` WHERE MONTH(`date`) = $month AND YEAR(`date`) = $year"; <--This is a working formula
-$sel_query = "SELECT SUM(`received`) AS m_received, SUM(`abandoned`) AS m_abandonded, SUM(`answered`) AS m_answered, SUM(`providers`) AS m_providers, SUM(`corporate`) AS m_corporate, SUM(`call_centers`) AS m_call_ceners, SUM(`vendors`) AS m_vendors, SUM(`front_desk`) AS m_front_desk FROM `stats` WHERE MONTH(`date`) = 7 AND YEAR(`date`) = 2022 AND `timeframe` = \"day\"";
+$sel_query = "SELECT SUM(`received`) AS m_received, SUM(`abandoned`) AS m_abandoned, SUM(`answered`) AS m_answered, SUM(`providers`) AS m_providers, SUM(`corporate`) AS m_corporate, SUM(`call_centers`) AS m_call_centers, SUM(`vendors`) AS m_vendors, SUM(`front_desk`) AS m_front_desk FROM `stats` WHERE MONTH(`date`) = 7 AND YEAR(`date`) = 2022 AND `timeframe` = \"day\"";
 //$count=1;
 //$sel_query = "SELECT * FROM `stats`";
 //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
