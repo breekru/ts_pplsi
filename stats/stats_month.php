@@ -41,7 +41,8 @@ if(isset($_POST["month"])){
     $year = $_POST["yearpicker"];
 }
 //$count=1;
-$sel_query = "select * FROM `stats` WHERE MONTH(`date`) = $month AND YEAR(`date`) = $year";
+//$sel_query = "select * FROM `stats` WHERE MONTH(`date`) = $month AND YEAR(`date`) = $year"; <--This is a working formula
+$sel_query = "SELECT SUM(`received`) AS m_received, SUM(`abandoned`) AS m_abandonded, SUM(`answered`) AS m_answered, SUM(`providers`) AS m_providers, SUM(`corporate`) AS m_corporate, SUM(`call_centers`) AS m_call_ceners, SUM(`vendors`) AS m_vendors, SUM(`front_desk`) AS m_front_desk FROM `stats` WHERE MONTH(`date`) = 7 AND YEAR(`date`) = 2022 AND `timeframe` = \"day\"";
 //$count=1;
 //$sel_query = "SELECT * FROM `stats`";
 //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
@@ -52,35 +53,35 @@ $row = mysqli_fetch_assoc($result);
 <caption><h1>Monthly Call Data for <?php echo $month;?>/<?php echo $year; ?> </h1></caption>
     <tr>
         <td>Calls Received</td>
-        <td><?php echo $row["received"]; ?></td>
+        <td><?php echo $row["m_received"]; ?></td>
     </tr>
     <tr>
         <td>Abandoned Calls</td>
-        <td><?php echo $row["abandoned"]; ?></td>
+        <td><?php echo $row["m_abandoned"]; ?></td>
     </tr>
     <tr>
         <td>Calls Answered</td>
-        <td><?php echo $row["answered"]; ?></td>
+        <td><?php echo $row["m_answered"]; ?></td>
     </tr>
     <tr>
         <td>Providers</td>
-        <td><?php echo $row["providers"]; ?></td>
+        <td><?php echo $row["m_providers"]; ?></td>
     </tr>
     <tr>
         <td>Corporate</td>
-        <td><?php echo $row["corporate"]; ?></td>
+        <td><?php echo $row["m_corporate"]; ?></td>
     </tr>
     <tr>
         <td>3rd Party Call Center</td>
-        <td><?php echo $row["call_centers"]; ?></td>
+        <td><?php echo $row["m_call_centers"]; ?></td>
     </tr>
     <tr>
         <td>Vendors</td>
-        <td><?php echo $row["vendors"]; ?></td>
+        <td><?php echo $row["m_vendors"]; ?></td>
     </tr>
     <tr>
         <td>Transfers from Front Desk</td>
-        <td><?php echo $row["front_desk"]; ?></td>
+        <td><?php echo $row["m_front_desk"]; ?></td>
     </tr>
     </table>
     <?php //$count++; } ?>
