@@ -70,6 +70,41 @@ while($row = mysqli_fetch_assoc($result)):;
 <input type="submit" value="Go" name="week"/>
 </form>
 </div>
+
+<div id="month">
+
+    <form method="post" action="stats_month.php">
+        <p> Monthly Data Choose a Month and Year: 
+<select id="monthpicker" name="monthpicker">
+<?php 
+$sql_month = "select DISTINCT(MONTH(`date`)) AS Months,`date` FROM `stats`";
+$sql_year = "select DISTINCT(YEAR(`date`)) AS Years FROM `stats`";
+$result_m = mysqli_query($con,$sql_month);
+$result_y = mysqli_query($con,$sql_year);
+$count=1;
+while($row = mysqli_fetch_assoc($result_m)):;
+?>
+    <option value="<?php echo $row["Months"]; ?>"><?php echo $row["Months"]; ?></option>
+
+    <?php
+    endwhile;
+    ?>
+</select>
+<?php>
+while($row = mysqli_fetch_assoc($result_y)):;
+?>
+    <option value="<?php echo $row["Years"]; ?>"><?php echo $row["Years"]; ?></option>
+
+    <?php
+    endwhile;
+    ?>
+</select>
+<input type="submit" value="Go" name="week"/>
+</form>
+</div>
+
+
+
 <div class="footer" id="footer">
     <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
