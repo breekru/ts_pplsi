@@ -38,7 +38,7 @@ require('config.php');
 <?php
 if(isset($_POST["month"])){
     $month = $_POST["monthpicker"];
-    $year = $_POST["yearpicker"]
+    $year = $_POST["yearpicker"];
 }
 //$count=1;
 $sel_query = "select * FROM `stats` WHERE MONTH(`date`) = $month AND YEAR(`date`) = $year";
