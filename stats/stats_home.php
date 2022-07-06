@@ -100,7 +100,7 @@ while($row = mysqli_fetch_assoc($result_y)):;
     endwhile;
     ?>
 </select>
-<input type="submit" value="Go" name="week"/>
+<input type="submit" value="Go" name="month"/>
 </form>
 </div>
 
