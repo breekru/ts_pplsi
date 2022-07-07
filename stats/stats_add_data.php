@@ -39,9 +39,9 @@ $sql = "SELECT MAX(`date`) FROM `stats` WHERE timeframe = \"day\"";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
 
-echo $row["day_of_week"];
+
 ?>
-<h2>Last Date Entered <?php echo $row; ?></h2>
+<h2>Last Date Entered <?php echo $result; ?></h2>
 <div class="divcenter">
 <form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label><br>
