@@ -39,7 +39,7 @@ $result2 = mysqli_query($con,$sql);
 $row2 = mysqli_fetch_assoc($result2);
 ?>
 <h1>Technical Support Call Data</h1>
-<h2>Last Date Entered:  <?php echo $row2["last_date"]; ?></h2>
+<h2>Last Day Entered:  <?php echo $row2["last_date"]; ?></h2>
 <div id="day">
 <form method="post" action="stats_day.php">
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
@@ -76,6 +76,8 @@ while($row = mysqli_fetch_assoc($result)):;
 </select>
 <input type="submit" value="Go" name="week"/>
 </form>
+<br>
+<p>Last Day Entered:  <?php echo $row2["last_date"]; ?></p>
 </div>
 
 <div id="month">
