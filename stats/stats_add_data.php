@@ -35,13 +35,13 @@ require('config.php');
 <a href=stats_home.php>Return to Home Page</a>
 <h1>Add Data to the DB</h1>
   <?php
-$sql = "SELECT MAX(`date`) FROM `stats` WHERE timeframe = \"day\"";
+$sql = "SELECT MAX(`date`) AS last_date FROM `stats` WHERE timeframe = \"day\"";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
 
 
 ?>
-<h2>Last Date Entered <?php echo $result; ?></h2>
+<h2>Last Date Entered <?php echo $row["last_date"]; ?></h2>
 <div class="divcenter">
 <form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label><br>
