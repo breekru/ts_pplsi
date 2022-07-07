@@ -45,6 +45,7 @@ $row2 = mysqli_fetch_assoc($result2);
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
     <input type="submit" value="Go" name="day"/></p>
 </form>
+<p>Last Day Entered:  <?php echo $row2["last_date"]; ?></p>
 </div>
 
 <div id="week">
@@ -76,8 +77,6 @@ while($row = mysqli_fetch_assoc($result)):;
 </select>
 <input type="submit" value="Go" name="week"/>
 </form>
-<br>
-<p>Last Day Entered:  <?php echo $row2["last_date"]; ?></p>
 </div>
 
 <div id="month">
