@@ -35,7 +35,7 @@ require('config.php');
 <a href=stats_home.php>Return to Home Page</a>
 <h1>Add Data to the DB</h1>
   <?php
-$sql = "SELECT DATE_FORMAT(MAX(date), \'%a %b %e, %Y\') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
+$sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
 
