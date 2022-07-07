@@ -32,7 +32,14 @@ require('config.php');
 </head>
 
 <body>
+
+<?php
+$sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
+$result2 = mysqli_query($con,$sql);
+$row2 = mysqli_fetch_assoc($result2);
+?>
 <h1>Technical Support Call Data</h1>
+<h2>Last Date Entered:  <?php echo $row2["last_date"]; ?></h2>
 <div id="day">
 <form method="post" action="stats_day.php">
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
