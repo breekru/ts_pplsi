@@ -46,7 +46,7 @@ $row = mysqli_fetch_assoc($result);
 <form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label><br>
     <select id="timeframe" name="timeframe">
-        <option value="month">Month</option>
+
         <option value="week">Week</option>
         <option value="day" selected>Day</option>
     </select>
