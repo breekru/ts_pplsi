@@ -47,9 +47,10 @@ $sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"da
 $result = mysqli_query($con,$sel_query);
 //while($row = mysqli_fetch_assoc($result)) { 
 $row = mysqli_fetch_assoc($result);
+$formated_date = $row["date"];
 ?>
 <caption><h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1></caption>
-<caption><h1>Daily Call Data for <?php echo date_format($row["date"], 'D-m-d-Y'); ?> </h1></caption>
+<caption><h1>Daily Call Data for <?php echo date_format($formatted_date, 'D m-d-Y'); ?> </h1></caption>
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?></td>
