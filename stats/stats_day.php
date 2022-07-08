@@ -50,7 +50,7 @@ $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
 <caption><h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1></caption>
-<caption><h1>Daily Call Data for <?php echo date_format($formatted_date, 'm-d-Y'); ?> </h1></caption>
+
     <tr>
         <td>Calls Received</td>
         <td><?php echo $row["received"]; ?></td>
