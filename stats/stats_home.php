@@ -84,8 +84,8 @@ while($row = mysqli_fetch_assoc($result)):;
         <p> Monthly Data Choose a Month and Year: 
 <select id="monthpicker" name="monthpicker">
 <?php 
-$sql_month = "select DISTINCT(MONTH(`date`)) AS Months FROM `stats`";
-$sql_year = "select DISTINCT(YEAR(`date`)) AS Years FROM `stats`";
+$sql_month = "select DISTINCT(MONTH(`date`)) AS Months FROM `stats` ORDER BY Months ASC";
+$sql_year = "select DISTINCT(YEAR(`date`)) AS Years FROM `stats` ORDER BY Years ASC";
 $result_m = mysqli_query($con,$sql_month);
 $result_y = mysqli_query($con,$sql_year);
 $count=1;
