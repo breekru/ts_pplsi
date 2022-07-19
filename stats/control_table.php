@@ -20,7 +20,7 @@ $corporate = mysqli_real_escape_string($link, $_REQUEST['corporate']);
 $call_centers = mysqli_real_escape_string($link, $_REQUEST['call_centers']);
 $vendors = mysqli_real_escape_string($link, $_REQUEST['vendors']);
 $front_desk = mysqli_real_escape_string($link, $_REQUEST['front_desk']);
-$0000-0100 = mysqli_real_escape_string($link, $_REQUEST['0000-0100']);
+$hour1 = mysqli_real_escape_string($link, $_REQUEST['hour1']);
 
 
 //if (isset($_POST['upload'])) {
@@ -41,7 +41,7 @@ $0000-0100 = mysqli_real_escape_string($link, $_REQUEST['0000-0100']);
 //    $dod1 = $_REQUEST['dod'];
 //}
 
-$sql = "INSERT INTO stats (id, timeframe, date, day_of_week, received, abandoned, answered, providers, corporate, call_centers, vendors, front_desk, 0000-0100) VALUES (NULL, '$timeframe', '$date', '$day_of_week', '$received', '$abandoned', '$answered', '$providers', '$corporate', '$call_centers', '$vendors', '$front_desk', '$0000-0100')";
+$sql = "INSERT INTO stats (id, timeframe, date, day_of_week, received, abandoned, answered, providers, corporate, call_centers, vendors, front_desk, hour1) VALUES (NULL, '$timeframe', '$date', '$day_of_week', '$received', '$abandoned', '$answered', '$providers', '$corporate', '$call_centers', '$vendors', '$front_desk', '$hour1')";
 
 if(mysqli_query($link, $sql)){
     header("refresh:5;url=stats_home.php");

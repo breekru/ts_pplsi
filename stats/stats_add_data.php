@@ -92,7 +92,7 @@ $row = mysqli_fetch_assoc($result);
     <input type="text" name="front_desk">
     <br>
     <label>0000-0100</label>
-    <input type="text" name="0000-0100">
+    <input type="text" name="hour1">
     <br>
     <label>0100-0200</label>
     <input type="text" name="0100-0200">
