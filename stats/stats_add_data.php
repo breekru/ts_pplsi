@@ -91,6 +91,77 @@ $row = mysqli_fetch_assoc($result);
     <br>
     <input type="text" name="front_desk">
     <br>
+    <label>0000-0100</label>
+    <input type="text" name="0000-0100">
+    <br>
+    <label>0100-0200</label>
+    <input type="text" name="0100-0200">
+    <br>
+    <label>0200-0300</label>
+    <input type="text" name="0200-0300">
+    <br>
+    <label>0300-0400</label>
+    <input type="text" name="0300-0400">
+    <br>
+    <label>0400-0500</label>
+    <input type="text" name="0400-0500">
+    <br>
+    <label>0500-0600</label>
+    <input type="text" name="0500-0600">
+    <br>
+    <label>0600-0700</label>
+    <input type="text" name="0600-0700">
+    <br>
+    <label>0700-0800</label>
+    <input type="text" name="0700-0800">
+    <br>
+    <label>0800-0900</label>
+    <input type="text" name="0800-0900">
+    <br>
+    <label>0900-1000</label>
+    <input type="text" name="0900-1000">
+    <br>
+    <label>1000-1100</label>
+    <input type="text" name="1000-1100">
+    <br>
+    <label>1100-1200</label>
+    <input type="text" name="1100-1200">
+    <br>
+    <label>1200-1300</label>
+    <input type="text" name="1200-1300">
+    <br>
+    <label>1300-1400</label>
+    <input type="text" name="1300-1400">
+    <br>
+    <label>1500-1600</label>
+    <input type="text" name="1500-1600">
+    <br>
+    <label>1600-1700</label>
+    <input type="text" name="1600-1700">
+    <br>
+    <label>1700-1800</label>
+    <input type="text" name="1700-1800">
+    <br>
+    <label>1800-1900</label>
+    <input type="text" name="1800-1900">
+    <br>
+    <label>1900-2000</label>
+    <input type="text" name="1900-2000">
+    <br>
+    <label>2000-2100</label>
+    <input type="text" name="2000-2100">
+    <br>
+    <label>2100-2200</label>
+    <input type="text" name="2100-2200">
+    <br>
+    <label>2200-2300</label>
+    <input type="text" name="2200-2300">
+    <br>
+    <label>2300-0000</label>
+    <input type="text" name="2300-0000">
+    <br>
+    
+    
     <input type="submit" value="Add" name="add">
     <input type="reset" value="Reset Form">
 </form>
