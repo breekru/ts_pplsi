@@ -83,7 +83,9 @@ $formated_date = $row["date"];
         <td>Transfers from Front Desk</td>
         <td><?php echo $row["front_desk"]; ?></td>
     </tr>
-    <caption>Incomming Calls By Hour</caption>
+   <tr>
+   <td colspan="2">Incomming calls By Hour</td>
+</tr>
     <tr>
         <td>0000-0100</td>
         <td><?php echo $row["hour1"]; ?></td>
