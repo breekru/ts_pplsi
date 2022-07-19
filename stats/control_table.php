@@ -21,6 +21,29 @@ $call_centers = mysqli_real_escape_string($link, $_REQUEST['call_centers']);
 $vendors = mysqli_real_escape_string($link, $_REQUEST['vendors']);
 $front_desk = mysqli_real_escape_string($link, $_REQUEST['front_desk']);
 $hour1 = mysqli_real_escape_string($link, $_REQUEST['hour1']);
+$hour2 = mysqli_real_escape_string($link, $_REQUEST['hour2']);
+$hour3 = mysqli_real_escape_string($link, $_REQUEST['hour3']);
+$hour4 = mysqli_real_escape_string($link, $_REQUEST['hour4']);
+$hour5 = mysqli_real_escape_string($link, $_REQUEST['hour5']);
+$hour6 = mysqli_real_escape_string($link, $_REQUEST['hour6']);
+$hour7 = mysqli_real_escape_string($link, $_REQUEST['hour7']);
+$hour8 = mysqli_real_escape_string($link, $_REQUEST['hour8']);
+$hour9 = mysqli_real_escape_string($link, $_REQUEST['hour9']);
+$hour10 = mysqli_real_escape_string($link, $_REQUEST['hour10']);
+$hour11 = mysqli_real_escape_string($link, $_REQUEST['hour11']);
+$hour12 = mysqli_real_escape_string($link, $_REQUEST['hour12']);
+$hour13 = mysqli_real_escape_string($link, $_REQUEST['hour13']);
+$hour14 = mysqli_real_escape_string($link, $_REQUEST['hour14']);
+$hour15 = mysqli_real_escape_string($link, $_REQUEST['hour15']);
+$hour16 = mysqli_real_escape_string($link, $_REQUEST['hour16']);
+$hour17 = mysqli_real_escape_string($link, $_REQUEST['hour17']);
+$hour18 = mysqli_real_escape_string($link, $_REQUEST['hour18']);
+$hour19 = mysqli_real_escape_string($link, $_REQUEST['hour19']);
+$hour20 = mysqli_real_escape_string($link, $_REQUEST['hour20']);
+$hour21 = mysqli_real_escape_string($link, $_REQUEST['hour21']);
+$hour22 = mysqli_real_escape_string($link, $_REQUEST['hour22']);
+$hour23 = mysqli_real_escape_string($link, $_REQUEST['hour23']);
+$hour24 = mysqli_real_escape_string($link, $_REQUEST['hour24']);
 
 
 //if (isset($_POST['upload'])) {
@@ -41,7 +64,7 @@ $hour1 = mysqli_real_escape_string($link, $_REQUEST['hour1']);
 //    $dod1 = $_REQUEST['dod'];
 //}
 
-$sql = "INSERT INTO stats (id, timeframe, date, day_of_week, received, abandoned, answered, providers, corporate, call_centers, vendors, front_desk, hour1) VALUES (NULL, '$timeframe', '$date', '$day_of_week', '$received', '$abandoned', '$answered', '$providers', '$corporate', '$call_centers', '$vendors', '$front_desk', '$hour1')";
+$sql = "INSERT INTO stats (id, timeframe, date, day_of_week, received, abandoned, answered, providers, corporate, call_centers, vendors, front_desk, hour1, hour2, hour3, hour4, hour5, hour6, hour7, hour8, hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17, hour18, hour19, hour20, hour21, hour22, hour23, hour24) VALUES (NULL, '$timeframe', '$date', '$day_of_week', '$received', '$abandoned', '$answered', '$providers', '$corporate', '$call_centers', '$vendors', '$front_desk', '$hour1', '$hour2', '$hour3', '$hour4', '$hour5', '$hour6', '$hour7', '$hour8', '$hour9', '$hour10', '$hour11', '$hour12', '$hour13', '$hour14', '$hour15', '$hour16', '$hour17', '$hour18', '$hour19', '$hour20', '$hour21', '$hour22', '$hour23', '$hour24')";
 
 if(mysqli_query($link, $sql)){
     header("refresh:5;url=stats_home.php");

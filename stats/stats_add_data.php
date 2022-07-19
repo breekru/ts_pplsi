@@ -95,70 +95,73 @@ $row = mysqli_fetch_assoc($result);
     <input type="text" name="hour1">
     <br>
     <label>0100-0200</label>
-    <input type="text" name="0100-0200">
+    <input type="text" name="hour2">
     <br>
     <label>0200-0300</label>
-    <input type="text" name="0200-0300">
+    <input type="text" name="hour3">
     <br>
     <label>0300-0400</label>
-    <input type="text" name="0300-0400">
+    <input type="text" name="hour4">
     <br>
     <label>0400-0500</label>
-    <input type="text" name="0400-0500">
+    <input type="text" name="hour5">
     <br>
     <label>0500-0600</label>
-    <input type="text" name="0500-0600">
+    <input type="text" name="hour6">
     <br>
     <label>0600-0700</label>
-    <input type="text" name="0600-0700">
+    <input type="text" name="hour7">
     <br>
     <label>0700-0800</label>
-    <input type="text" name="0700-0800">
+    <input type="text" name="hour8">
     <br>
     <label>0800-0900</label>
-    <input type="text" name="0800-0900">
+    <input type="text" name="hour9">
     <br>
     <label>0900-1000</label>
-    <input type="text" name="0900-1000">
+    <input type="text" name="hour10">
     <br>
     <label>1000-1100</label>
-    <input type="text" name="1000-1100">
+    <input type="text" name="hour11">
     <br>
     <label>1100-1200</label>
-    <input type="text" name="1100-1200">
+    <input type="text" name="hour12">
     <br>
     <label>1200-1300</label>
-    <input type="text" name="1200-1300">
+    <input type="text" name="hour13">
     <br>
     <label>1300-1400</label>
-    <input type="text" name="1300-1400">
+    <input type="text" name="hour14">
+    <br>    
+    <label>1400-1500</label>
+    <input type="text" name="hour15">
     <br>
     <label>1500-1600</label>
-    <input type="text" name="1500-1600">
+    <input type="text" name="hour16">
     <br>
     <label>1600-1700</label>
-    <input type="text" name="1600-1700">
+    <input type="text" name="hour17">
     <br>
     <label>1700-1800</label>
-    <input type="text" name="1700-1800">
+    <input type="text" name="hour18">
     <br>
     <label>1800-1900</label>
-    <input type="text" name="1800-1900">
+    <input type="text" name="hour19">
     <br>
     <label>1900-2000</label>
-    <input type="text" name="1900-2000">
+    <input type="text" name="hour20">
     <br>
     <label>2000-2100</label>
-    <input type="text" name="2000-2100">
+    <input type="text" name="hour21">
     <br>
     <label>2100-2200</label>
-    <input type="text" name="2100-2200">
+    <input type="text" name="hour22">
     <br>
     <label>2200-2300</label>
-    <input type="text" name="2200-2300">
+    <input type="text" name="hour23">
     <br>
     <label>2300-0000</label>
-    <input type="text" name="2300-0000">
+    <input type="text" name="hour24">
     <br>
     
     
