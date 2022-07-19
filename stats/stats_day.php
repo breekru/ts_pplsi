@@ -83,7 +83,7 @@ $formated_date = $row["date"];
         <td>Transfers from Front Desk</td>
         <td><?php echo $row["front_desk"]; ?></td>
     </tr>
-   <tr>
+   <!--<tr>
    <td colspan="2">Incomming calls By Hour</td>
 </tr>
     <tr>
@@ -181,7 +181,7 @@ $formated_date = $row["date"];
     <tr>
         <td>2300-0000</td>
         <td><?php echo $row["hour24"]; ?></td>
-    </tr>
+    </tr>-->
     </table>
     <?php //$count++; } ?>
 
