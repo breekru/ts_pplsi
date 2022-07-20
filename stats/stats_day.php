@@ -27,11 +27,16 @@ require('config.php');
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+  <!--<link rel="stylesheet" href="css/stats.css">-->
 
 </head>
 
-<body>
+<body class="w3-theme">
+    <div class="w3-row">
+    <div class="w3-col s3">
+</div>
 
 <?php
 if(isset($_POST["day"])){
@@ -50,9 +55,10 @@ $formated_date = $row["date"];
 
     <a href=stats_home.php>Return to Home Page</a>
     <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
-<div class="row">
-    <div class="column">
-<table class="center">
+<div class="w3-row">
+    <div class="w3-col s3">
+<!--<table class="center">-->
+<table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
 
 <!--<?php
 if(isset($_POST["day"])){
@@ -106,8 +112,9 @@ $formated_date = $row["date"];
     </tr>
 </table>
 </div>
-<div class="column">
-<table class="center">
+<div class="w3-col s3">
+<!--<table class="center">-->
+<table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
    <tr>
    <caption><h2>Incomming calls By Hour</h2><caption>
 </tr>
@@ -208,6 +215,8 @@ $formated_date = $row["date"];
         <td><?php echo $row["hour24"]; ?></td>
     </tr>
     </table>
+</div>
+<div class="w3-col s3">
 </div>
 </div>
     <?php //$count++; } ?>
