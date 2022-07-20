@@ -28,7 +28,7 @@ require('config.php');
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/stats.css">
+  <!--<link rel="stylesheet" href="css/stats.css">-->
 
 
 </head>
