@@ -50,7 +50,7 @@ $row2 = mysqli_fetch_assoc($result2);
 </form>
 </div>
 
-<div id="week">
+<div id="week" class="w3-container w3-theme-l2">
  <!--   <form method="post" action="stats_week.php">
         <p> Weekly Data Choose a week: <select id="weekpicker" name="weekpicker">
             <option value="6/19 - 6/25">6/19 - 6/25</option>
@@ -81,7 +81,7 @@ while($row = mysqli_fetch_assoc($result)):;
 </form>
 </div>
 
-<div id="month">
+<div id="month" class="w3-container w3-theme-l2">
 
     <form method="post" action="stats_month.php">
         <p> Monthly Data Choose a Month and Year: 
