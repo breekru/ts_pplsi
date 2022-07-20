@@ -28,6 +28,7 @@ require('config.php');
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -113,7 +114,7 @@ while($row = mysqli_fetch_assoc($result_y)):;
 
 
 
-<div class="footer" id="footer">
+<div class="footer" class="w3-container-sand" id="footer">
     <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
 </body>
