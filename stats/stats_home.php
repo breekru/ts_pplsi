@@ -116,7 +116,7 @@ while($row = mysqli_fetch_assoc($result_y)):;
 
 
 
-<div class="w3-container w3-light-grey" id="footer">
+<div class="w3-container w3-theme-d4" id="footer" style="padding: 0; text-align: center; vertical-align: middle; line-height: normal; margin: 0; position: fixed; bottom: 0px; width: 100%;">
     <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
 </body>
