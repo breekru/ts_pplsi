@@ -43,7 +43,7 @@ $row2 = mysqli_fetch_assoc($result2);
 ?>
 <h1 style="text-align: center;">Technical Support Call Data</h1>
 <h2 style="text-align: center;">Last Day Entered:  <?php echo $row2["last_date"]; ?></h2>
-<div id="day" class="w3-container w3-theme-l2 w3-margin-left w3-margin-right">
+<div id="day" class="w3-container w3-theme-l2 w3-margin-left w3-margin-right w3-margin-top">
 <form method="post" action="stats_day.php">
     <p> Single Day Data: <input id="datepicker" type="date" size="8" name="datepicker"/>
     <input type="submit" value="Go" name="day"/></p>
@@ -81,7 +81,7 @@ while($row = mysqli_fetch_assoc($result)):;
 </form>
 </div>
 
-<div id="month" class="w3-container w3-theme-l2 w3-margin-left w3-margin-right">
+<div id="month" class="w3-container w3-theme-l2 w3-margin-left w3-margin-right w3-margin-bottom">
 
     <form method="post" action="stats_month.php">
         <p> Monthly Data Choose a Month and Year: 
