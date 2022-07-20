@@ -40,7 +40,7 @@ require('config.php');
 </div>
 <div class="w3-col s4 w3-center">
 <!--<table class="center">-->
-<table class="w3-table w3-border w3-centered w3-card-4" style="width:50%; align=center;">
+<table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
 
 <?php
 if(isset($_POST["month"])){
