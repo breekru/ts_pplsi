@@ -59,36 +59,36 @@ $row = mysqli_fetch_assoc($result);
 ?>
 <caption><h1>Monthly Call Data for <?php echo $month;?>/<?php echo $year; ?> </h1></caption>
     <tr>
-        <td class="w3-text-dark-grey w3-light-grey">Calls Received</td>
-        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_received"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;">Calls Received</td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;"><?php echo $row["m_received"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-dark-grey">Abandoned Calls</td>
-        <td class="w3-dark-grey"><?php echo $row["m_abandoned"]; ?></td>
+        <td class="w3-dark-grey" style="width: auto;">Abandoned Calls</td>
+        <td class="w3-dark-grey" style="width: auto;"><?php echo $row["m_abandoned"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-text-dark-grey w3-light-grey">Calls Answered</td>
-        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_answered"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;">Calls Answered</td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;"><?php echo $row["m_answered"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-dark-grey">Providers</td>
-        <td class="w3-dark-grey"><?php echo $row["m_providers"]; ?></td>
+        <td class="w3-dark-grey" style="width: auto;">Providers</td>
+        <td class="w3-dark-grey" style="width: auto;"><?php echo $row["m_providers"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-text-dark-grey w3-light-grey">Corporate</td>
-        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_corporate"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;">Corporate</td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;"><?php echo $row["m_corporate"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-dark-grey">3rd Party Call Center</td>
-        <td class="w3-dark-grey"><?php echo $row["m_call_centers"]; ?></td>
+        <td class="w3-dark-grey" style="width: auto;">3rd Party Call Center</td>
+        <td class="w3-dark-grey" style="width: auto;"><?php echo $row["m_call_centers"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-text-dark-grey w3-light-grey">Vendors</td>
-        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_vendors"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;">Vendors</td>
+        <td class="w3-text-dark-grey w3-light-grey" style="width: auto;"><?php echo $row["m_vendors"]; ?></td>
     </tr>
     <tr>
-        <td class="w3-dark-grey">Transfers from Front Desk</td>
-        <td class="w3-dark-grey"><?php echo $row["m_front_desk"]; ?></td>
+        <td class="w3-dark-grey" style="width: auto;">Transfers from Front Desk</td>
+        <td class="w3-dark-grey" style="width: auto;"><?php echo $row["m_front_desk"]; ?></td>
     </tr>
     </table>
     <?php //$count++; } ?>
