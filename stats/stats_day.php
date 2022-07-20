@@ -33,6 +33,7 @@ require('config.php');
 
 <body>
     <a href=stats_home.php>Return to Home Page</a>
+    <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
 <div class="row">
     <div class="column">
 <table class="center">
@@ -51,7 +52,7 @@ $result = mysqli_query($con,$sel_query);
 $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
-<h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
+
 <caption><h1>Call Total Counts</h1></caption>
 
     <tr>
