@@ -274,9 +274,9 @@ html {
 #footer
 {
     clear: both;
-    border: 1px groove #aaaaaa;
+    /*border: 1px groove #aaaaaa;
     background: #737584;
-    color: White;
+    color: White;*/
     padding: 0;
     text-align: center;
     vertical-align: middle;
@@ -286,6 +286,7 @@ html {
     bottom: 0px;
     width: 100%;
 }
+
 
 * {
   box-sizing: border-box;
