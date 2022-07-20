@@ -33,6 +33,8 @@ require('config.php');
 
 <body>
     <a href=stats_home.php>Return to Home Page</a>
+<div class="row">
+    <div class="column">
 <table class="center">
 
 <?php
@@ -83,7 +85,10 @@ $formated_date = $row["date"];
         <td>Transfers from Front Desk</td>
         <td><?php echo $row["front_desk"]; ?></td>
     </tr>
-   <!--<tr>
+</table>
+</div>
+<div class="column">
+   <tr>
    <td colspan="2">Incomming calls By Hour</td>
 </tr>
     <tr>
@@ -181,8 +186,10 @@ $formated_date = $row["date"];
     <tr>
         <td>2300-0000</td>
         <td><?php echo $row["hour24"]; ?></td>
-    </tr>-->
+    </tr>
     </table>
+</div>
+</div>
     <?php //$count++; } ?>
 
 
