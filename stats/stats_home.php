@@ -32,7 +32,7 @@ require('config.php');
 
 </head>
 
-<body>
+<body class="w3-steel">
 
 <?php
 $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
@@ -114,7 +114,7 @@ while($row = mysqli_fetch_assoc($result_y)):;
 
 
 
-<div class="w3-container w3-sand" id="footer">
+<div class="w3-container w3-light-grey" id="footer">
     <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
 </body>
