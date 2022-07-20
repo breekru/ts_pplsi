@@ -35,8 +35,7 @@ require('config.php');
 
 <body class="w3-theme">
     <div class="w3-row">
-    <div class="w3-col s4">
-</div>
+
 
 <?php
 if(isset($_POST["day"])){
@@ -52,11 +51,13 @@ $result = mysqli_query($con,$sel_query);
 $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
+    <div class="w3-col s4 w3-center">
 
     <a href=stats_home.php>Return to Home Page</a>
+</div>
     <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
 
-    <div class="w3-col s4">
+    <div class="w3-col s4 w3-center">
 <!--<table class="center">-->
 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
 
@@ -112,7 +113,7 @@ $formated_date = $row["date"];
     </tr>
 </table>
 </div>
-<div class="w3-col s4">
+<div class="w3-col s4 w3-center">
 <!--<table class="center">-->
 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
    <tr>
