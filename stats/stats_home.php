@@ -28,12 +28,13 @@ require('config.php');
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
   <!--<link rel="stylesheet" href="css/stats.css">-->
 
 
 </head>
 
-<body class="w3-black">
+<body>
 
 <?php
 $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
