@@ -51,7 +51,8 @@ $result = mysqli_query($con,$sel_query);
 $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
-<caption><h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1></caption>
+<h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
+<caption><h1>Call Total Counts</h1></caption>
 
     <tr>
         <td>Calls Received</td>
@@ -90,7 +91,7 @@ $formated_date = $row["date"];
 <div class="column">
 <table class="center">
    <tr>
-   <td colspan="2">Incomming calls By Hour</td>
+   <caption><h1>Incomming calls By Hour</h1><caption>
 </tr>
     <tr>
         <td>0000-0100</td>
