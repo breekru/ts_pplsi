@@ -70,7 +70,7 @@ $formated_date = $row["date"];
 ?>
 -->
 
-<caption><h1>Call Total Counts</h1></caption>
+<caption><h2>Call Total Counts</h2></caption>
 
     <tr>
         <td>Calls Received</td>
@@ -109,7 +109,7 @@ $formated_date = $row["date"];
 <div class="column">
 <table class="center">
    <tr>
-   <caption><h1>Incomming calls By Hour</h1><caption>
+   <caption><h2>Incomming calls By Hour</h2><caption>
 </tr>
     <tr>
         <td>0000-0100</td>
