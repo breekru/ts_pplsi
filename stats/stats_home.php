@@ -114,7 +114,7 @@ while($row = mysqli_fetch_assoc($result_y)):;
 
 
 
-<div class="footer" class="w3-container-sand" id="footer">
+<div class="w3-container-sand" id="footer">
     <a href="stats_add_data.php" class="button">Add Data</a>
 </div>
 </body>
