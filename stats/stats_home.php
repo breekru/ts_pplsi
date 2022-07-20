@@ -33,7 +33,7 @@ require('config.php');
 
 </head>
 
-<body class="w3-steel">
+<body class="w3-win8-steel">
 
 <?php
 $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
