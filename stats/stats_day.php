@@ -88,6 +88,7 @@ $formated_date = $row["date"];
 </table>
 </div>
 <div class="column">
+<table class="center">
    <tr>
    <td colspan="2">Incomming calls By Hour</td>
 </tr>
