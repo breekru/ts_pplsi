@@ -63,28 +63,28 @@ $row = mysqli_fetch_assoc($result);
         <td class="w3-dark-grey"><?php echo $row["m_abandoned"]; ?></td>
     </tr>
     <tr>
-        <td>Calls Answered</td>
-        <td><?php echo $row["m_answered"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey">Calls Answered</td>
+        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_answered"]; ?></td>
     </tr>
     <tr>
-        <td>Providers</td>
-        <td><?php echo $row["m_providers"]; ?></td>
+        <td class="w3-dark-grey">Providers</td>
+        <td class="w3-dark-grey"><?php echo $row["m_providers"]; ?></td>
     </tr>
     <tr>
-        <td>Corporate</td>
-        <td><?php echo $row["m_corporate"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey">Corporate</td>
+        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_corporate"]; ?></td>
     </tr>
     <tr>
-        <td>3rd Party Call Center</td>
-        <td><?php echo $row["m_call_centers"]; ?></td>
+        <td class="w3-dark-grey">3rd Party Call Center</td>
+        <td class="w3-dark-grey"><?php echo $row["m_call_centers"]; ?></td>
     </tr>
     <tr>
-        <td>Vendors</td>
-        <td><?php echo $row["m_vendors"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey">Vendors</td>
+        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_vendors"]; ?></td>
     </tr>
     <tr>
-        <td>Transfers from Front Desk</td>
-        <td><?php echo $row["m_front_desk"]; ?></td>
+        <td class="w3-dark-grey">Transfers from Front Desk</td>
+        <td class="w3-dark-grey"><?php echo $row["m_front_desk"]; ?></td>
     </tr>
     </table>
     <?php //$count++; } ?>
