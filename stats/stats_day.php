@@ -35,7 +35,7 @@ require('config.php');
 
 <body class="w3-theme">
     <div class="w3-row">
-    <div class="w3-col s3">
+    <div class="w3-col s4">
 </div>
 
 <?php
@@ -56,7 +56,7 @@ $formated_date = $row["date"];
     <a href=stats_home.php>Return to Home Page</a>
     <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
 
-    <div class="w3-col s3">
+    <div class="w3-col s4">
 <!--<table class="center">-->
 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
 
@@ -112,7 +112,7 @@ $formated_date = $row["date"];
     </tr>
 </table>
 </div>
-<div class="w3-col s3">
+<div class="w3-col s4">
 <!--<table class="center">-->
 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
    <tr>
@@ -216,7 +216,7 @@ $formated_date = $row["date"];
     </tr>
     </table>
 </div>
-<div class="w3-col s3">
+<div class="w3-col s4">
 </div>
 </div>
     <?php //$count++; } ?>
