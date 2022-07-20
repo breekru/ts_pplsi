@@ -36,7 +36,7 @@ require('config.php');
 <body class="w3-theme">
 <a href=stats_home.php>Return to Home Page</a>
 <!--<table class="center">-->
-<table class="w3-table w3-striped w3-border w3-centered w3-card-4" style="width:50%;">
+<table class="w3-table w3-border w3-centered w3-card-4" style="width:50%; align=center;">
 
 <?php
 if(isset($_POST["month"])){
@@ -55,12 +55,12 @@ $row = mysqli_fetch_assoc($result);
 ?>
 <caption><h1>Monthly Call Data for <?php echo $month;?>/<?php echo $year; ?> </h1></caption>
     <tr>
-        <td>Calls Received</td>
-        <td><?php echo $row["m_received"]; ?></td>
+        <td class="w3-text-dark-grey w3-light-grey">Calls Received</td>
+        <td class="w3-text-dark-grey w3-light-grey"><?php echo $row["m_received"]; ?></td>
     </tr>
     <tr>
-        <td>Abandoned Calls</td>
-        <td><?php echo $row["m_abandoned"]; ?></td>
+        <td class="w3-dark-grey">Abandoned Calls</td>
+        <td class="w3-dark-grey"><?php echo $row["m_abandoned"]; ?></td>
     </tr>
     <tr>
         <td>Calls Answered</td>
