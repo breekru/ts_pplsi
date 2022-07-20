@@ -36,7 +36,7 @@ require('config.php');
 <body class="w3-theme">
 <a href=stats_home.php>Return to Home Page</a>
 <!--<table class="center">-->
-<table class="w3-table w3-striped w3-border w3-centered">
+<table class="w3-table w3-striped w3-border w3-centered w3-card-4" style="width:50%;">
 
 <?php
 if(isset($_POST["month"])){
