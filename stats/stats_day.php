@@ -32,11 +32,6 @@ require('config.php');
 </head>
 
 <body>
-    <a href=stats_home.php>Return to Home Page</a>
-    <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
-<div class="row">
-    <div class="column">
-<table class="center">
 
 <?php
 if(isset($_POST["day"])){
@@ -52,6 +47,28 @@ $result = mysqli_query($con,$sel_query);
 $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
+
+    <a href=stats_home.php>Return to Home Page</a>
+    <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
+<div class="row">
+    <div class="column">
+<table class="center">
+
+<!--<?php
+if(isset($_POST["day"])){
+    $date = $_POST["datepicker"];
+}
+//$count=1;
+//$sel_query = "SELECT * FROM `stats` WHERE `date`='$date'";
+$sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"day\"";
+//$sel_query = "SELECT * FROM `stats`";
+//$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
+$result = mysqli_query($con,$sel_query);
+//while($row = mysqli_fetch_assoc($result)) { 
+$row = mysqli_fetch_assoc($result);
+$formated_date = $row["date"];
+?>
+-->
 
 <caption><h1>Call Total Counts</h1></caption>
 
