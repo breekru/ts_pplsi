@@ -27,13 +27,16 @@ require('config.php');
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+  <!--<link rel="stylesheet" href="css/stats.css">-->
 
 </head>
 
-<body>
+<body class="w3-theme">
 <a href=stats_home.php>Return to Home Page</a>
-<table class="center">
+<!--<table class="center">-->
+<table class="w3-table w3-striped w3-border w3-centered">
 
 <?php
 if(isset($_POST["month"])){
