@@ -301,6 +301,5 @@ $formated_date = $row["date"];
 </table>
 
 -->
-</div>
 </body>
 </html>
