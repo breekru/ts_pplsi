@@ -51,7 +51,7 @@ $result = mysqli_query($con,$sel_query);
 $row = mysqli_fetch_assoc($result);
 $formated_date = $row["date"];
 ?>
-    <div class="w3-col l4 w3-center">
+    <div class="w3-col l12 w3-center">
 
     <a href=stats_home.php>Return to Home Page</a>
 </div>
