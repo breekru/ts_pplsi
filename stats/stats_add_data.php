@@ -27,12 +27,24 @@ require('config.php');
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/stats.css">
+  <!--<link rel="stylesheet" href="css/stats.css">-->
+  <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
+  <div class="row">
+    <div class="col-sm-4">
 <a href=stats_home.php>Return to Home Page</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
 <h1>Add Data to the DB</h1>
   <?php
 $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
@@ -42,7 +54,11 @@ $row = mysqli_fetch_assoc($result);
 
 ?>
 <h2>Last Date Entered:  <?php echo $row["last_date"]; ?></h2>
-<div class="divcenter">
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+<!--<div class="divcenter">-->
 <form action="control_table.php" method="post">
     <label for="timeframe">Month/Week/Day</label><br>
     <select id="timeframe" name="timeframe">
@@ -167,6 +183,8 @@ $row = mysqli_fetch_assoc($result);
     
     <input type="submit" value="Add" name="add">
     <input type="reset" value="Reset Form">
+</div>
+</div>
 </form>
 </div>
 </body>
