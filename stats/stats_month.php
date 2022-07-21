@@ -34,7 +34,7 @@ require('config.php');
 </head>
 
 <body class="w3-theme">
-    <div class="w3-row">
+    <div class="w3-row" style="width: 100%;">
         <div class="w3-col l4">
 <a href=stats_home.php>Return to Home Page</a>
 </div>
