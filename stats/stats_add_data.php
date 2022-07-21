@@ -36,7 +36,7 @@ require('config.php');
 
 </head>
 
-<body class="grey-500 text-light">
+<body class="gray-500 text-light">
   <div class="row">
     <div class="col-sm-4">
 <a class="text-light" href=stats_home.php>Return to Home Page</a>
