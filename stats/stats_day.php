@@ -54,7 +54,7 @@ $formated_date = $row["date"];
     <div class="w3-col l12 w3-center">
 
     <a href=stats_home.php>Return to Home Page</a>
-</div>
+
     <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
 </div>
 <div class="w3-row">
