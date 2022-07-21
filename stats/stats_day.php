@@ -59,6 +59,8 @@ $formated_date = $row["date"];
 </div>
 <div class="w3-row">
     <div class="w3-col l4 w3-center">
+</div>
+<div class="w3-col l4 w3-center">
 <!--<table class="center">-->
 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
 
