@@ -42,7 +42,7 @@
             </caption>
             <tr>
                 <td>Calls Received</td>
-                <td><?php echo $row["received"]; ?></td>
+                <td><?php echo $row["Received(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Abandoned Calls</td>
