@@ -50,14 +50,14 @@
                             while($row = mysqli_fetch_assoc($result)):;
                             */?>
                         <?php 
-                            $sql1 = "SELECT Date_Format(SUBDATE(`date`, dayofweek(`date`) - 1), \"%m/%d/%y\") AS \"First\" FROM stats GROUP BY WEEK(date)";
+                            $sql1 = "SELECT Date_Format(SUBDATE(`date`, dayofweek(`date`) - 1), \"%m/%d/%y\") AS \"First\", week(`date`) as \"weeknum\" FROM stats GROUP BY WEEK(date)";
                             $sql2 = "SELECT Date_Format(SUBDATE(`date`, dayofweek(`date`) - 7), \"%m/%d/%y\") AS \"Last\" FROM stats GROUP BY WEEK(date)";
                             $result_f = mysqli_query($con,$sql1);
                             $result_l = mysqli_query($con,$sql2);
                             $count=1;
                             while(($row1 = mysqli_fetch_assoc($result_f)) && ($row2 = mysqli_fetch_assoc($result_l))):;
                             ?>
-                        <option value="<?php echo $row1["First"]; ?>"><?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?></option>
+                        <option value="<?php echo $row1["weeknum"]; ?>"><?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?></option>
                         <?php
                             endwhile;
                             ?>

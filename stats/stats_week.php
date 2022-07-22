@@ -27,7 +27,6 @@
                 if(isset($_POST["week"])){
                     $week = $_POST["weekpicker"];
                 }
-                $week_f = date_format($week,"Y-m-d");
                 //$count=1;
                 //$sel_query = "SELECT * FROM `stats` WHERE `day_of_week`='$week'"; <-----LATEST WORKING QUERY
                 $sel_query = "SELECT sum(`received`) as \"Received(week)\", sum(`abandoned`) as \"Abandoned(week)\", sum(`answered`) as \"Answered(week)\", sum(`providers`) as \"Provider(week)\", sum(`corporate`) as \"Corporate(week)\", sum(`call_centers`) as \"Call Center(week)\", sum(`vendors`) as \"Vendor(week)\", sum(`front_desk`) as \"Front Desk(week)\" FROM `stats` WHERE SUBDATE(`date`, dayofweek(`date`) - 1)=$week";
@@ -40,7 +39,6 @@
                 ?>
             <caption>
                 <h1>Weekly Call Data for <?php echo $row["day_of_week"]; ?> </h1>
-                <h2><?php echo $week_f; ?></h2>
                 <h2><?php echo $week; ?></h2>
             </caption>
             <tr>
