@@ -43,13 +43,21 @@
                 <p>
                     Weekly Data Choose a week: 
                     <select id="weekpicker" name="weekpicker">
-                        <?php 
+                        <?php /*
                             $sql = "SELECT `day_of_week` FROM `stats` WHERE `timeframe` = \"week\"";
                             $result = mysqli_query($con,$sql);
                             $count=1;
                             while($row = mysqli_fetch_assoc($result)):;
+                            */?>
+                        <?php 
+                            $sql1 = "SELECT SUBDATE(`date`, dayofweek(`date`) - 1) AS \"First\" FROM stats GROUP BY WEEK(date)";
+                            $sql2 = "SELECT SUBDATE(`date`, dayofweek(`date`) - 7) AS \"Last\" FROM stats GROUP BY WEEK(date)";
+                            $result_f = mysqli_query($con,$sql1);
+                            $result_l = mysqli_query($con,$sql2);
+                            $count=1;
+                            while($row1 = mysqli_fetch_assoc($result_f)) && ($row2 = mysqli_fetch_assoc($result_l)):;
                             ?>
-                        <option value="<?php echo $row["day_of_week"]; ?>"><?php echo $row["day_of_week"]; ?></option>
+                        <option value="<?php echo $row["First"]; ?>-<?php echo $row["Last"]; ?>"><?php echo $row["First"]; ?>-<?php echo $row["Last"]; ?></option>
                         <?php
                             endwhile;
                             ?>
