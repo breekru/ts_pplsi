@@ -43,7 +43,7 @@
          <h1>Daily Call Data for <?php echo $row["day_of_week"];?> <?php echo $row["date"]; ?> </h1>
       </div>
       <div class="w3-row">
-         <div class="w3-col  l3 w3-center"><div class="w3-col m4 w3-container"></div></div>
+         <div class="w3-col  l3 w3-center"><h4></h4></div>
          <div class="w3-col l3 w3-center">
             <!--<table class="center">-->
             <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
