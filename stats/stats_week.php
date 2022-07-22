@@ -29,7 +29,7 @@
                 }
                 //$count=1;
                 //$sel_query = "SELECT * FROM `stats` WHERE `day_of_week`='$week'"; <-----LATEST WORKING QUERY
-                $sel_query = "SELECT sum(`received`) as \"Received(week)\", sum(`abandoned`) as \"Abandoned(week)\", sum(`answered`) as \"Answered(week)\", sum(`providers`) as \"Provider(week)\", sum(`corporate`) as \"Corporate(week)\", sum(`call_centers`) as \"Call Center(week)\", sum(`vendors`) as \"Vendor(week)\", sum(`front_desk`) as \"Front Desk(week)\" FROM `stats` WHERE SUBDATE(`date`, dayofweek(`date`) - 1)=$week";
+                $sel_query = "SELECT sum(`received`) as \"Received(week)\", sum(`abandoned`) as \"Abandoned(week)\", sum(`answered`) as \"Answered(week)\", sum(`providers`) as \"Provider(week)\", sum(`corporate`) as \"Corporate(week)\", sum(`call_centers`) as \"Call Center(week)\", sum(`vendors`) as \"Vendor(week)\", sum(`front_desk`) as \"Front Desk(week)\" FROM `stats` WHERE weeknum="28"";
                 //$count=1;
                 //$sel_query = "SELECT * FROM `stats`";
                 //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td>Abandoned Calls</td>
-                <td><?php echo $row["abandoned"]; ?></td>
+                <td><?php echo $row["Abandoned(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Calls Answered</td>
