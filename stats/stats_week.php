@@ -51,27 +51,27 @@
             </tr>
             <tr>
                 <td>Calls Answered</td>
-                <td><?php echo $row["answered"]; ?></td>
+                <td><?php echo $row["Answered(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Providers</td>
-                <td><?php echo $row["providers"]; ?></td>
+                <td><?php echo $row["Providers(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Corporate</td>
-                <td><?php echo $row["corporate"]; ?></td>
+                <td><?php echo $row["Corporate(week)"]; ?></td>
             </tr>
             <tr>
                 <td>3rd Party Call Center</td>
-                <td><?php echo $row["call_centers"]; ?></td>
+                <td><?php echo $row["Call Center(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Vendors</td>
-                <td><?php echo $row["vendors"]; ?></td>
+                <td><?php echo $row["Vendor(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Transfers from Front Desk</td>
-                <td><?php echo $row["front_desk"]; ?></td>
+                <td><?php echo $row["Front Desk(week)"]; ?></td>
             </tr>
         </table>
         <?php //$count++; } ?>
