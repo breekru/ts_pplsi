@@ -55,7 +55,7 @@
                             $result_f = mysqli_query($con,$sql1);
                             $result_l = mysqli_query($con,$sql2);
                             $count=1;
-                            while($row1 = mysqli_fetch_assoc($result_f)) && ($row2 = mysqli_fetch_assoc($result_l)):;
+                            while(($row1 = mysqli_fetch_assoc($result_f)) && ($row2 = mysqli_fetch_assoc($result_l))):;
                             ?>
                         <option value="<?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?>"><?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?></option>
                         <?php
