@@ -50,8 +50,8 @@
                             while($row = mysqli_fetch_assoc($result)):;
                             */?>
                         <?php 
-                            $sql1 = "SELECT SUBDATE(`date`, dayofweek(`date`) - 1) AS \"First\" FROM stats GROUP BY WEEK(date)";
-                            $sql2 = "SELECT SUBDATE(`date`, dayofweek(`date`) - 7) AS \"Last\" FROM stats GROUP BY WEEK(date)";
+                            $sql1 = "SELECT Date_Format(SUBDATE(`date`, dayofweek(`date`) - 1), \"%m/%d/%y\") AS \"First\" FROM stats GROUP BY WEEK(date)";
+                            $sql2 = "SELECT Date_Format(SUBDATE(`date`, dayofweek(`date`) - 7), \"%m/%d/%y\") AS \"Last\" FROM stats GROUP BY WEEK(date)";
                             $result_f = mysqli_query($con,$sql1);
                             $result_l = mysqli_query($con,$sql2);
                             $count=1;
