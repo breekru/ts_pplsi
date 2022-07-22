@@ -38,8 +38,8 @@
                 $row = mysqli_fetch_assoc($result);
                 ?>
             <caption>
-                <h1>Weekly Call Data for <?php echo $row["day_of_week"]; ?> </h1>
-                <h2><?php echo $week; ?></h2>
+                <h1>Weekly Call Data for week:<?php echo $week; ?> </h1>
+
             </caption>
             <tr>
                 <td>Calls Received</td>
