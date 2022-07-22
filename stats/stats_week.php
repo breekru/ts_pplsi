@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td>Providers</td>
-                <td><?php echo $row["Providers(week)"]; ?></td>
+                <td><?php echo $row["Provider(week)"]; ?></td>
             </tr>
             <tr>
                 <td>Corporate</td>
