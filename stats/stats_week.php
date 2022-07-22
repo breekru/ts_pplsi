@@ -40,7 +40,8 @@
                 ?>
             <caption>
                 <h1>Weekly Call Data for <?php echo $row["day_of_week"]; ?> </h1>
-                <h2><?php echo $week_f; ?>
+                <h2><?php echo $week_f; ?></h2>
+                <h2><?php echo $week; ?></h2>
             </caption>
             <tr>
                 <td>Calls Received</td>
