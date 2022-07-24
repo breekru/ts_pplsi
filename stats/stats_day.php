@@ -21,6 +21,15 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
       <!--<link rel="stylesheet" href="css/stats.css">-->
+      <style>
+   tr:nth-child(even) {
+      background-color: #D1D3DF;
+   }
+
+   tr:nth-child(odd) {
+      background-color: #fff;
+   }
+   </style>
    </head>
    <body class="w3-theme">
       <div class="w3-row">
