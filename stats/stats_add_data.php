@@ -100,7 +100,7 @@
                         <input type="text" name="front_desk">
                         <br>
                 </div>
-                <div class="col-sm-3">
+                <div class="w3-col l3 w3-center">
                 <label>0000-0100</label><br>
                 <input type="text" name="hour1">
                 <br>
