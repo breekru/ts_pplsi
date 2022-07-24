@@ -18,21 +18,26 @@
         <link rel="icon" href="img/favicon.ico">
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <!--<link rel="stylesheet" href="css/stats.css">-->
-        <!-- Latest compiled and minified CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Latest compiled JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+      <!--<link rel="stylesheet" href="css/stats.css">-->
+      <style>
+   tr:nth-child(even) {
+      background-color: #f1f1f1;
+      color: #616161;
+   }
+
+   tr:nth-child(odd) {
+      background-color: #616161;
+      color: #f1f1f1;
+   }
+   </style>
     </head>
-    <body class="bg-dark text-light">
-        <div class="row">
-            <div class="col-sm-4">
+    <body class="w3-theme">
+      <div class="w3-row">
+      <div class="w3-col l12 w3-center">
                 <a class="text-light" href=stats_home.php>Return to Home Page</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
+
                 <h1>Add Data to the DB</h1>
                 <?php
                     $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS last_date FROM `stats` WHERE `timeframe` = \"day\"";
@@ -44,8 +49,8 @@
                 <h2>Last Date Entered:  <?php echo $row["last_date"]; ?></h2>
             </div>
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-3">
+            <div class="w3-col  l3 w3-center"><h4></h4></div>
+         <div class="w3-col l3 w3-center">
                     <!--<div class="divcenter">-->
                     <form action="control_table.php" method="post">
                         <label for="timeframe">Month/Week/Day</label><br>
