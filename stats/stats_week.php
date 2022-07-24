@@ -66,7 +66,10 @@
                 <div class="w3-col  l3 w3-center"><h4></h4></div>
                 <div class="w3-col l3 w3-center">
                 <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
-            <tr>
+                <caption>
+                  <h2>Call Total Counts</h2>
+               </caption>        
+                <tr>
                 <td>Calls Received</td>
                 <td><?php echo $row["Received(week)"]; ?></td>
             </tr>
@@ -104,9 +107,7 @@
                 <div class="w3-col l3 w3-center">
             <!--<table class="center">-->
             <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
-            <caption>
-                  <h2>Call Total Counts</h2>
-               </caption>   
+
             <tr>
                   <caption>
                   <h2>Incomming calls By Hour</h2>
