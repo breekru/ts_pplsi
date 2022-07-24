@@ -45,7 +45,7 @@
                 }
                 //$count=1;
                 //$sel_query = "SELECT * FROM `stats` WHERE `day_of_week`='$week'"; <-----LATEST WORKING QUERY
-                $sel_query = "SELECT sum(`received`) as \"Received(week)\", sum(`abandoned`) as \"Abandoned(week)\", sum(`answered`) as \"Answered(week)\", sum(`providers`) as \"Provider(week)\", sum(`corporate`) as \"Corporate(week)\", sum(`call_centers`) as \"Call Center(week)\", sum(`vendors`) as \"Vendor(week)\", sum(`front_desk`) as \"Front Desk(week)\" FROM `stats` WHERE weeknum='$week'";
+                $sel_query = "SELECT sum(`received`) as \"Received(week)\", sum(`abandoned`) as \"Abandoned(week)\", sum(`answered`) as \"Answered(week)\", sum(`providers`) as \"Provider(week)\", sum(`corporate`) as \"Corporate(week)\", sum(`call_centers`) as \"Call Center(week)\", sum(`vendors`) as \"Vendor(week)\", sum(`front_desk`) as \"Front Desk(week)\", sum(`hour1`) as \"hour1(week)\", sum(`hour2`) as \"hour2(week)\", sum(`hour3`) as \"hour3(week)\", sum(`hour4`) as \"hour4(week)\", sum(`hour5`) as \"hour5(week)\", sum(`hour6`) as \"hour6(week)\", sum(`hour7`) as \"hour7(week)\", sum(`hour8`) as \"hour8(week)\", sum(`hour9`) as \"hour9(week)\", sum(`hour10`) as \"hour10(week)\", sum(`hour11`) as \"hour11(week)\", sum(`hour12`) as \"hour12(week)\", sum(`hour13`) as \"hour13(week)\", sum(`hour14`) as \"hour14(week)\", sum(`hour15`) as \"hour15(week)\", sum(`hour16`) as \"hour16(week)\", sum(`hour17`) as \"hour17(week)\", sum(`hour18`) as \"hour18(week)\", sum(`hour19`) as \"hour19(week)\", sum(`hour20`) as \"hour20(week)\", sum(`hour21`) as \"hour21(week)\", sum(`hour22`) as \"hour22(week)\", sum(`hour23`) as \"hour23(week)\", sum(`hour24`) as \"hour24(week)\" FROM `stats` WHERE weeknum='$week'";
                 $sql = "SELECT date_format(max(`date`),\"%m/%d/%y\") as max, date_format(min(`date`),\"%m/%d/%y\") as min FROM `stats` WHERE weeknum = '$week'";
                 //$count=1;
                 //$sel_query = "SELECT * FROM `stats`";
@@ -115,99 +115,99 @@
                </tr>
                <tr>
                   <td>0000-0100</td>
-                  <td>test</td>
+                  <td><?php echo $row["hour1(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0100-0200</td>
-                  <td><?php echo $row["hour2"]; ?></td>
+                  <td><?php echo $row["hour2(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0200-0300</td>
-                  <td><?php echo $row["hour3"]; ?></td>
+                  <td><?php echo $row["hour3(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0300-0400</td>
-                  <td><?php echo $row["hour4"]; ?></td>
+                  <td><?php echo $row["hour4(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0400-0500</td>
-                  <td><?php echo $row["hour5"]; ?></td>
+                  <td><?php echo $row["hour5(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0500-0600</td>
-                  <td><?php echo $row["hour6"]; ?></td>
+                  <td><?php echo $row["hour6(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0600-0700</td>
-                  <td><?php echo $row["hour7"]; ?></td>
+                  <td><?php echo $row["hour7(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0700-0800</td>
-                  <td><?php echo $row["hour8"]; ?></td>
+                  <td><?php echo $row["hour8(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0800-0900</td>
-                  <td><?php echo $row["hour9"]; ?></td>
+                  <td><?php echo $row["hour9(week)"]; ?></td>
                </tr>
                <tr>
                   <td>0900-1000</td>
-                  <td><?php echo $row["hour10"]; ?></td>
+                  <td><?php echo $row["hour10(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1000-1100</td>
-                  <td><?php echo $row["hour11"]; ?></td>
+                  <td><?php echo $row["hour11(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1100-1200</td>
-                  <td><?php echo $row["hour12"]; ?></td>
+                  <td><?php echo $row["hour12(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1200-1300</td>
-                  <td><?php echo $row["hour13"]; ?></td>
+                  <td><?php echo $row["hour13(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1300-1400</td>
-                  <td><?php echo $row["hour14"]; ?></td>
+                  <td><?php echo $row["hour14(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1400-1500</td>
-                  <td><?php echo $row["hour15"]; ?></td>
+                  <td><?php echo $row["hour15(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1500-1600</td>
-                  <td><?php echo $row["hour16"]; ?></td>
+                  <td><?php echo $row["hour16(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1600-1700</td>
-                  <td><?php echo $row["hour17"]; ?></td>
+                  <td><?php echo $row["hour17(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1700-1800</td>
-                  <td><?php echo $row["hour18"]; ?></td>
+                  <td><?php echo $row["hour18(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1800-1900</td>
-                  <td><?php echo $row["hour19"]; ?></td>
+                  <td><?php echo $row["hour19(week)"]; ?></td>
                </tr>
                <tr>
                   <td>1900-2000</td>
-                  <td><?php echo $row["hour20"]; ?></td>
+                  <td><?php echo $row["hour20(week)"]; ?></td>
                </tr>
                <tr>
                   <td>2000-2100</td>
-                  <td><?php echo $row["hour21"]; ?></td>
+                  <td><?php echo $row["hour21(week)"]; ?></td>
                </tr>
                <tr>
                   <td>2100-2200</td>
-                  <td><?php echo $row["hour22"]; ?></td>
+                  <td><?php echo $row["hour22(week)"]; ?></td>
                </tr>
                <tr>
                   <td>2200-2300</td>
-                  <td><?php echo $row["hour23"]; ?></td>
+                  <td><?php echo $row["hour23(week)"]; ?></td>
                </tr>
                <tr>
                   <td>2300-0000</td>
-                  <td><?php echo $row["hour24"]; ?></td>
+                  <td><?php echo $row["hour24(week)"]; ?></td>
                </tr>
             </table>
          </div>
