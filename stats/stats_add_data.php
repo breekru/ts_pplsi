@@ -50,7 +50,7 @@
             </div>
             <div class="row">
             <div class="w3-col  l3 w3-center"><h4></h4></div>
-         <div class="w3-col l3 w3-center">
+         <div class="w3-col l3">
                     <!--<div class="divcenter">-->
                     <form action="control_table.php" method="post">
                         <label for="timeframe">Month/Week/Day</label><br>
@@ -100,7 +100,7 @@
                         <input type="text" name="front_desk">
                         <br>
                 </div>
-                <div class="w3-col l3 w3-center">
+                <div class="w3-col l3 ">
                 <label>0000-0100</label><br>
                 <input type="text" name="hour1">
                 <br>
