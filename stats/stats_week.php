@@ -38,7 +38,7 @@
         <div class="w3-row">
         <div class="w3-col l12 w3-center">
         <a href=stats_home.php>Return to Home Page</a>
-        <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
+        
             <?php
                 if(isset($_POST["week"])){
                     $week = $_POST["weekpicker"];
@@ -56,15 +56,16 @@
                 $row = mysqli_fetch_assoc($result);
                 $row_t = mysqli_fetch_assoc($title);
                 ?>
-            <caption>
+
                 <h1>Weekly Call Data for week: <?php echo $week; ?> </h1>
                 <h2><?php echo $row_t["min"]; ?> - <?php echo $row_t["max"]; ?></h2>
 
-            </caption>
+
                 </div>
                 <div class="w3-row-padding">
                 <div class="w3-col  l3 w3-center"><h4></h4></div>
                 <div class="w3-col l3 w3-center">
+                <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
             <tr>
                 <td>Calls Received</td>
                 <td><?php echo $row["Received(week)"]; ?></td>
