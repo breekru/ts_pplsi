@@ -104,14 +104,17 @@
                 <div class="w3-col l3 w3-center">
             <!--<table class="center">-->
             <table class="w3-table w3-border w3-centered w3-card-4" style="width:100%; align=center;">
-               <tr>
+            <caption>
+                  <h2>Call Total Counts</h2>
+               </caption>   
+            <tr>
                   <caption>
                   <h2>Incomming calls By Hour</h2>
                   <caption>
                </tr>
                <tr>
                   <td>0000-0100</td>
-                  <td><?php echo $row["hour1"]; ?></td>
+                  <td>test</td>
                </tr>
                <tr>
                   <td>0100-0200</td>
