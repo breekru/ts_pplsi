@@ -23,11 +23,13 @@
       <!--<link rel="stylesheet" href="css/stats.css">-->
       <style>
    tr:nth-child(even) {
-      background-color: #D1D3DF;
+      background-color: #f1f1f1;
+      color: #616161;
    }
 
    tr:nth-child(odd) {
-      background-color: #fff;
+      background-color: #616161;
+      color: #f1f1f1;
    }
    </style>
    </head>
