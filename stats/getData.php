@@ -17,9 +17,9 @@
  function drawChart() {
  var data = google.visualization.arrayToDataTable([
 
- ['day_of_week','received'],
+ ['Monday','received'],
  <?php 
-			$query = "SELECT * from stats";
+			$query = "SELECT * from stats where day_of_week = Monday";
 
 			 $exec = mysqli_query($con,$query);
 			 while($row = mysqli_fetch_array($exec)){
