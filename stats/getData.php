@@ -19,7 +19,7 @@
 
  ['Monday','received'],
  <?php 
-			$query = "SELECT * from stats where day_of_week = Monday";
+			$query = "SELECT * from stats where day_of_week = 'Monday'";
 
 			 $exec = mysqli_query($con,$query);
 			 while($row = mysqli_fetch_array($exec)){
