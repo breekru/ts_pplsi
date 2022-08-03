@@ -19,12 +19,12 @@
 
  ['Monday','received'],
  <?php 
-			$query = "SELECT * from stats where day_of_week = 'Monday'";
+			$query = "SELECT sum('Received') as 'total' from stats where day_of_week = 'Monday'";
 
 			 $exec = mysqli_query($con,$query);
 			 while($row = mysqli_fetch_array($exec)){
 
-			 echo "['".$row['day_of_week']."',".$row['received']."],";
+			 echo "['".$row['total']."',".$row['received']."],";
 			 }
 			 ?> 
  
