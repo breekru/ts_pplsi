@@ -24,7 +24,7 @@
 			 $exec = mysqli_query($con,$sql);
 			 while($row = mysqli_fetch_array($exec)){
 
-			 echo "['".$row['total']."',".$row['received']."],";
+			 echo "['".$row['Test']."',".$row['received']."],";
 			 }
 			 ?> 
  
