@@ -17,14 +17,14 @@
  function drawChart() {
  var data = google.visualization.arrayToDataTable([
 
- ['Monday','received'],
+ ['Day','Count'],
  <?php 
-			$sql = "SELECT SUM(`received`) AS \'Test\' FROM `stats` WHERE `day_of_week` = \"Monday\"";
+			$sql = "SELECT `day_of_week` AS \"Day\", SUM(`received`) AS \"Count\" FROM `stats` GROUP BY `day_of_week`";
 
 			 $exec = mysqli_query($con,$sql);
 			 while($row = mysqli_fetch_array($exec)){
 
-			 echo "['".$row['Test']."',".$row['received']."],";
+			 echo "['".$row['Day']."',".$row['Count']."],";
 			 }
 			 ?> 
  
