@@ -19,7 +19,8 @@
 
  ['Day','Count'],
  <?php 
-			$sql = "SELECT `day_of_week` AS \"Day\", SUM(`received`) AS \"Count\" FROM `stats` GROUP BY `day_of_week`";
+			$sql = "SELECT `day_of_week` AS \"Day\", SUM(`received`) AS \"Count\" FROM `stats` GROUP BY `day_of_week`ORDER BY CASE WHEN `day_of_week` = \"Monday\" then 1 WHEN `day_of_week` = \"Tuesday\" then 2 WHEN `day_of_week` = \"Wednesday\" then 3 WHEN `day_of_week` = \"Thursday\" then 4 WHEN `day_of_week` = \"Friday\" then 5 WHEN `day_of_week` = \"Saturday\" then 6 WHEN `day_of_week` = \"Sunday\" then 7 END ASC";
+
 
 			 $exec = mysqli_query($con,$sql);
 			 while($row = mysqli_fetch_array($exec)){
