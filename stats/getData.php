@@ -37,7 +37,7 @@
  pointSize: 10,
  displayAnnotations: true
  };
- var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
+ var chart = new google.visualization.AnnotationChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
  }
 	
