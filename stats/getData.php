@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script type="text/javascript">
- google.load("visualization", "1", {packages:["line"]});
+ google.load("visualization", "1", {packages:["corechart"]});
  google.setOnLoadCallback(drawChart);
  function drawChart() {
  var data = google.visualization.arrayToDataTable([
@@ -36,7 +36,7 @@
  legend: 'none',
  pointSize: 10,
  };
- var chart = new google.visualization.Line(document.getElementById("columnchart12"));
+ var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
  }
 	
