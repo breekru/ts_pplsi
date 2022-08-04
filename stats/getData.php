@@ -32,7 +32,8 @@
  ]);
 
  var options = {
- title: 'Number of Students according to their class',
+ title: 'Total Calls by Day',
+ animation.startup: 'true',
   pieHole: 0.5,
           pieSliceTextStyle: {
             color: 'black',
