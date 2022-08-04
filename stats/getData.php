@@ -33,7 +33,7 @@
 
  var options = {
  title: 'Total Calls by Day',
- animation.startup: 'true',
+ 'animation.startup': 'true',
   pieHole: 0.5,
           pieSliceTextStyle: {
             color: 'black',
