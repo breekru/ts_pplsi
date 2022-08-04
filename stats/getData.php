@@ -35,6 +35,11 @@
  title: 'Total Calls by Day',
  legend: 'none',
  pointSize: 10,
+ annotations: {
+     textStyle: {
+         color: 'black',
+         fontSize: 11,
+     },
  };
  var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
