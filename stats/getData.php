@@ -33,12 +33,8 @@
 
  var options = {
  title: 'Total Calls by Day',
-
-  pieHole: 0.5,
-          pieSliceTextStyle: {
-            color: 'black',
-          },
-          legend: 'Bottom'
+ legend: 'none',
+ pointSize: 10,
  };
  var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
