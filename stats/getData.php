@@ -36,7 +36,6 @@
  title: 'Total Calls by Day',
  legend: 'none',
  pointSize: 10,
- displayAnnotations: true
  };
  var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
