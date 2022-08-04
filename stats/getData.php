@@ -5,7 +5,7 @@
 <html>
 <head>
  <meta charset="utf-8">
- <title>TechJunkGigs</title>
+ <title>Test</title>
  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -33,12 +33,12 @@
 
  var options = {
  title: 'Total Calls by Day',
- 'animation.startup': 'true',
+
   pieHole: 0.5,
           pieSliceTextStyle: {
             color: 'black',
           },
-          legend: 'none'
+          legend: 'Bottom'
  };
  var chart = new google.visualization.LineChart(document.getElementById("columnchart12"));
  chart.draw(data,options);
