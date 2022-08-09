@@ -69,35 +69,35 @@
                         <br>
                         <label>Total Calls Received</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="received">
+                        <input autocomplete="smartystreets" type="text" name="received">
                         <br>
                         <label>Total Calls Abandoned</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="abandoned">
+                        <input autocomplete="smartystreets" type="text" name="abandoned">
                         <br>
                         <label>Total Calls Answered</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="answered">
+                        <input autocomplete="smartystreets" type="text" name="answered">
                         <br>
                         <label>Total Calls From Providers</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="providers">
+                        <input autocomplete="smartystreets" type="text" name="providers">
                         <br>
                         <label>Total Calls From Corporate Employees</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="corporate">
+                        <input autocomplete="smartystreets" type="text" name="corporate">
                         <br>
                         <label>Total Calls From 3rd Party Call Centers</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="call_centers">
+                        <input autocomplete="smartystreets" type="text" name="call_centers">
                         <br>
                         <label>Total Calls From Vendors</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="vendors">
+                        <input autocomplete="smartystreets" type="text" name="vendors">
                         <br>
                         <label>Total Calls Transfered from Front Desk</label>
                         <br>
-                        <input autocomplete="no_auto" type="text" name="front_desk">
+                        <input autocomplete="smartystreets" type="text" name="front_desk">
                         <br>
                 </div>
                 <div class="w3-col l3 ">
