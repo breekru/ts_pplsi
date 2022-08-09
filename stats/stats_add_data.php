@@ -69,7 +69,7 @@
                         <br>
                         <label>Total Calls Received</label>
                         <br>
-                        <input autocomplete="smartystreets" type="text" name="received">
+                        <input type="text" name="received" autocomplete="smartystreets">
                         <br>
                         <label>Total Calls Abandoned</label>
                         <br>
