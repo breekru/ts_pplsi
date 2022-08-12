@@ -52,7 +52,7 @@
             <div class="w3-col  l3 w3-center"><h4></h4></div>
          <div class="w3-col l3">
                     <!--<div class="divcenter">-->
-                    <form action="control_table.php" method="post">
+                    <form action="control_table.php" method="post" onsubmit="return confirm('Do you really want to submit the form?');">
                         <label for="timeframe">Month/Week/Day</label><br>
                         <select id="timeframe" name="timeframe">
                             <option value="week">Week</option>
