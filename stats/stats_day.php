@@ -52,7 +52,7 @@
          ?>
       <div class="w3-col l12 w3-center">
          <a href=stats_home.php>Return to Home Page</a>
-         <h1>Daily Call Data for <?php echo $row["last_date"]; ?> <?php echo $date; ?> </h1>
+         <h1>Daily Call Data for <?php echo $row["last_date"]; ?> <?php //echo $date; ?> </h1>
       </div>
       <div class="w3-row-padding">
          <div class="w3-col  l3 w3-center"><h4></h4></div>
