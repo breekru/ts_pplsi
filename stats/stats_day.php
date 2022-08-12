@@ -41,7 +41,8 @@
          }
          //$count=1;
          //$sel_query = "SELECT * FROM `stats` WHERE `date`='$date'";
-         $sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"day\"";
+         //$sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"day\""; <--Last working one
+         $sel_query = "SELECT DATE_FORMAT(date, \'%a %b %e, %Y\') AS last_date from `stats` WHERE `date` = '$date' && `timeframe` = \"day\"";
          //$sel_query = "SELECT * FROM `stats`";
          //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
          $result = mysqli_query($con,$sel_query);
