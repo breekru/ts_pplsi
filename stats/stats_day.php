@@ -48,11 +48,11 @@
          $result1 = mysqli_query($con,$sql);
          //while($row = mysqli_fetch_assoc($result)) { 
          $row1 = mysqli_fetch_assoc($result1);
-         $formated_date = $row["date"];
+         //$formated_date = $row["date"];
          ?>
       <div class="w3-col l12 w3-center">
          <a href=stats_home.php>Return to Home Page</a>
-         <h1>Daily Call Data for <?php echo $row1["last_date"];?> <?php echo $row["date"]; ?> </h1>
+         <h1>Daily Call Data for <?php echo $row1["last_date"];?> <?php echo $date; ?> </h1>
       </div>
       <div class="w3-row-padding">
          <div class="w3-col  l3 w3-center"><h4></h4></div>
