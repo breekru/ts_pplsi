@@ -57,7 +57,7 @@
                             $count=1;
                             while(($row1 = mysqli_fetch_assoc($result_f)) && ($row2 = mysqli_fetch_assoc($result_l))):;
                             ?>
-                        <option value="<?php echo $row1["weeknum"]; ?><?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?></option>
+                        <option value="<?php echo $row1["weeknum"]; ?>"><?php echo $row1["First"]; ?>-<?php echo $row2["Last"]; ?></option>
                         <?php
                             endwhile;
                             ?>
