@@ -42,7 +42,7 @@
          //$count=1;
          //$sel_query = "SELECT * FROM `stats` WHERE `date`='$date'";
          //$sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"day\""; <--Last working one
-         $sql = "SELECT DATE_FORMAT(`date`, \'%a %b %e, %Y\') AS last_date from `stats` WHERE `date` = $date && `timeframe` = \"day\"";
+         $sql = "SELECT DATE_FORMAT(`date`, \'%a %b %e, %Y\') AS newdate from `stats` WHERE `date` = $date && `timeframe` = \"day\"";
          //$sel_query = "SELECT * FROM `stats`";
          //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
          $result1 = mysqli_query($con,$sql);
@@ -52,7 +52,7 @@
          ?>
       <div class="w3-col l12 w3-center">
          <a href=stats_home.php>Return to Home Page</a>
-         <h1>Daily Call Data for <?php echo $row1;?> <?php //echo $date; ?> </h1>
+         <h1>Daily Call Data for <?php echo $row1["newdate"];?> <?php //echo $date; ?> </h1>
       </div>
       <div class="w3-row-padding">
          <div class="w3-col  l3 w3-center"><h4></h4></div>
