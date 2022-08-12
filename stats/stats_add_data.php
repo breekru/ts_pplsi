@@ -59,13 +59,13 @@
                             <option value="day" selected>Day</option>
                         </select>
                         <br>
-                        <label>Date (If week/month enter starting date of time period)</label>
+                        <label>Date</label>
                         <br>
-                        <input type="date" name="date">
+                        <input type="date" name="date" required>
                         <br>
-                        <label>Day of Week Month Name or Week Range</label>
+                        <label>Day of Week</label>
                         <br>
-                        <input type="text" name="day_of_week">
+                        <input type="text" name="day_of_week" required>
                         <br>
                         <label>Total Calls Received</label>
                         <br>

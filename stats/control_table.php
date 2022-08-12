@@ -67,7 +67,7 @@ $hour24 = mysqli_real_escape_string($link, $_REQUEST['hour24']);
 $sql = "INSERT INTO stats (id, timeframe, date, day_of_week, received, abandoned, answered, providers, corporate, call_centers, vendors, front_desk, hour1, hour2, hour3, hour4, hour5, hour6, hour7, hour8, hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17, hour18, hour19, hour20, hour21, hour22, hour23, hour24) VALUES (NULL, '$timeframe', '$date', '$day_of_week', '$received', '$abandoned', '$answered', '$providers', '$corporate', '$call_centers', '$vendors', '$front_desk', '$hour1', '$hour2', '$hour3', '$hour4', '$hour5', '$hour6', '$hour7', '$hour8', '$hour9', '$hour10', '$hour11', '$hour12', '$hour13', '$hour14', '$hour15', '$hour16', '$hour17', '$hour18', '$hour19', '$hour20', '$hour21', '$hour22', '$hour23', '$hour24')";
 
 if(mysqli_query($link, $sql)){
-    header("refresh:5;url=stats_home.php");
+    header("refresh:3;url=stats_add_data.php");
     echo "Records added successfully.";
 } else{
     echo "ERROR: Could not execute $sql. " . mysqli_error($link);
@@ -88,18 +88,17 @@ mysqli_close($link);
 <head>
     <meta charset="UTF-8">
     <title>Saving!!!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
     <link rel="icon" type="image/ico" href="/img/favicon.ico" />
 </head>
-<body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Saving your data you will be redirected shortly</h1>
-
+<body class="w3-theme">
+<div class="w3-row" style="width: 100%;">
+    <div class="w3-col-l4 w3-center">
+        <div Class="w3-text-dark-grey w3-light-grey">
+            <h1>Adding to Spreadsheet!!!</h1>
         </div>
     </div>
+</div>
 </body>
 </html>
