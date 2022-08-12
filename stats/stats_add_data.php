@@ -62,10 +62,10 @@
                         <label>Date</label>
                         <br>
                         <input type="date" name="date" required>
-                        <br>
+                        <!--<br>
                         <label>Day of Week</label>
                         <br>
-                        <input type="text" name="day_of_week" required>
+                        <input type="text" name="day_of_week" required>-->
                         <br>
                         <label>Total Calls Received</label>
                         <br>
