@@ -42,7 +42,7 @@
          //$count=1;
          //$sel_query = "SELECT * FROM `stats` WHERE `date`='$date'";
          //$sel_query = "SELECT * FROM `stats` WHERE `date` = '$date' && `timeframe` = \"day\"";
-         $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS 'last_date' from `stats` WHERE `date` = $date && `timeframe` = \"day\"";
+         $sql = "SELECT DATE_FORMAT(MAX(date), '%a %b %e, %Y') AS 'last_date' from `stats` WHERE `date` = "$date" && `timeframe` = \"day\"";
          //$sel_query = "SELECT * FROM `stats`";
          //$sel_query="SELECT `id`, `timeframe`, `date`, `day_of_week`, `received`, `abandoned`, `answered`, `providers`, `corporate`, `call_centers`, `vendors`, `front_desk` FROM `stats` WHERE `id`= '1'";
          $result = mysqli_query($con,$sql);
